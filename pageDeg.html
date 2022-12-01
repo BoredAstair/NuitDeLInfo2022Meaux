@@ -7,11 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .non {
+        display: none;
+    }
+    
+    .jokenon {
+        display: none;
+    }
+    
+    .nope2 {
+        display: none;
+    }
+</style>
 
 <body>
     <h1>Qu'est tu fais là toi ?</h1>
     <p><a href="">Clique sur moi !!!</a></p>
     <p><a href="">Nan sur moi !!!</a></p>
+    <button>Retournez au site</button>
+    <div class="trollButton">
+        <p class="non">Bah nan !</p>
+        <Button class="jokenon">nan je rigole</Button>
+    </div>
 </body>
 
 </html>
+<script>
+    var non = document.querySelector("button");
+    var bahNon = document.querySelector(".non");
+    var non2 = document.querySelector(".jokenon");
+
+
+    non.addEventListener("click", () => {
+        bahNon.style.display = "block";
+        non2.style.display = "block";
+    })
+</script>
