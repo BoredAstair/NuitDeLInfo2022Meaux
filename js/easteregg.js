@@ -2,7 +2,6 @@ code=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','Arro
 current = 0;
 
 document.addEventListener('keydown', function konami(e){
-  console.log(current+'/'+code[current]+'/'+e.key)
   if (String(e.key) == code[current]){
     current ++;
     if (current == 10){

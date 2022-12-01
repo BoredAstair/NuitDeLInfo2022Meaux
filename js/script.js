@@ -1,5 +1,28 @@
-//INDEX.HTML
+let dialogueActuel;
+var Monika = {
+    "joyeux": "test.jpg",
+    "triste": "test2.jpg"
+}
+var Natsuki = {
+    "joyeux": "test.jpg",
+    "triste": "test2.jpg"
+}
+var username;
+var color;
 
+//INDEX.HTML
+function validateInputFields(){
+    username = document.getElementById("input_name").value;
+    color = document.getElementById("color").value;
+    if(username != "" && color != ""){
+        localStorage.setItem("username", username);
+        localStorage.setItem("color", color);
+        localStorage.setItem("dialogueActuel", 0);
+        window.location.href = "game.html";
+    }else{
+        alert("Veuillez remplir tous les champs");
+    }
+}
 
 
 //GAME.HTML
@@ -12,14 +35,7 @@ if(window.location.href.indexOf("game.html") > -1) {
 
 
 //Liste des emotions avec les images associèes à chaque personnage
-var Monika = {
-    "joyeux": "test.jpg",
-    "triste": "test2.jpg"
-}
-var Natsuki = {
-    "joyeux": "test.jpg",
-    "triste": "test2.jpg"
-}
+
 
 
 //##################################################################################################
@@ -29,20 +45,22 @@ var Natsuki = {
 //Cette fonction actualise tout le contenu de la page
 //Cette fonction est appellée par les boutons uniquement.
 function story(dialogueActuel){ 
+    console.log("Dialogue N°"+dialogueActuel);
     saveGame();
     switch (dialogueActuel) {
         case 0: //Premier dialogue du jeu
             setBackground("test.jpg"); //On choisit le background du dialogue 1
-            setDialogueText("Monika","Bonjour, je suis un test"); //On choisit l'auteur et le texte du dialogue 1
+            setDialogueText(username,"Bonjour, je suis un test"); //On choisit l'auteur et le texte du dialogue 1
             setButtons("Suivant", 1, "Précédent", 0); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("left", Monika.joyeux); //On choisit quel spirte afficher et où
+            setCharacter("left", Monika.triste); //On choisit quel sprite afficher
 
-
-            
             break;
 
         case 1: //Deuxième dialogue du jeu
-        alert("Dialogue 2");
+            setBackground("test2.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Natsuki","Bonjour, je suis un test 2 !"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Suivant", 1, "Précédent", 0); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Monika.triste); //On choisit quel sprite afficher
             
             break;
         case 2:
@@ -53,6 +71,7 @@ function story(dialogueActuel){
             break;
     
         default:
+            console.error(dialogueActuel);
             alert("Erreur / Histoire inexistante");
             break;
     }
@@ -65,13 +84,16 @@ function story(dialogueActuel){
 function saveGame(){
     localStorage.setItem("dialogueActuel", dialogueActuel);
 }
+//Convert string to int
 
 //NE PAS TOUCHER
 
 function loadGame(){
     if(localStorage.getItem("dialogueActuel") !== null){
         dialogueActuel = localStorage.getItem("dialogueActuel");
-        story(dialogueActuel);
+        username = localStorage.getItem("username");
+        color = localStorage.getItem("color");
+        story(parseInt(dialogueActuel));
     }else{
         alert("Aucune sauvegarde trouvée - Redirection au Index.html");
         window.location.href = "index.html";
@@ -79,13 +101,15 @@ function loadGame(){
 }
 
 //NE PAS TOUCHER
-let dialogueActuel = 0; //Variable  pour suivre l'avancée de l'utilisateur dans le jeu
 function next(){
-    story(dialogueActuel+1);
+    dialogueActuel++;
+    story(dialogueActuel);
 }
 function previous(){
-    story(dialogueActuel-1);
+    dialogueActuel--;
+    story(dialogueActuel);
 }
+
 //NE PAS TOUCHER
 //Affiche l'image de votre choix dans le background
 //Exemple : setBackground("test.jpg");
@@ -99,42 +123,54 @@ function setBackground(string){
 //Affiche le texte de votre choix dans le dialogue
 //Exemple : setDialogueText("Monika", "Bonjour, je suis un test");
 function setDialogueText(auteur, contenu){
-    document.getElementById("auteur").innerHTML = auteur;
-    document.getElementById("dialogueText").innerHTML = string;
+    if(auteur == username){
+        document.getElementById("auteur").style.color = color;
+        document.getElementById("auteur").innerHTML = username;
+    }else{
+        document.getElementById("auteur").innerHTML = auteur;
+        document.getElementById("auteur").style.color = "#000000";
+
+    }
+    document.getElementById("dialogueText").innerHTML = contenu;
+
 }
 
 //NE PAS TOUCHER
 //Actualise le sprite des personnages
-//Exemple : setCharacter("left", Monika.joyeux);
+//Exemple : setCharacter(Monika.joyeux);
 function setCharacter(position, personnage){
     if(position == "left"){
-        document.getElementById("background").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
+        //Reset background image
+        document.getElementById("personnage_left").style.backgroundImage = null;
+        document.getElementById("personnage_left").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
+    }else{
+        document.getElementById("personnage_left").style.backgroundImage = null;
+        document.getElementById("personnage_right").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
     }
-    if(position == "right"){
-        document.getElementById("characterRight").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
-    }
-}
 
+}
 
 //NE PAS TOUCHER
 //Actualise le texte contenu dans les boutons
 //Exemple : setButtons("Suivant", 1, "Précédent", 0); Le bouton "Suivant" ramènera vers le dialogue N°1 et le bouton "Précédent" ramènera vers le dialogue N°0 
-function setButtons(NomBouton1, numeroDialogue1, NomBouton2, numeroDialogue2, NomBouton3, numeroDialogue3, NomBouton4, numeroDialogue4){
+function setButtons(NomBouton1, numeroDialogue1, NomBouton2, numeroDialogue2, NomBouton3, numeroDialogue3){
     if(NomBouton1 != null && numeroDialogue1 != null){
         document.getElementById("button1").innerHTML = NomBouton1;
         document.getElementById('button1').setAttribute('onclick','story('+numeroDialogue1+')');
+    }else{
+        document.getElementById("button1").style.display = "none";
     }
     if(NomBouton2 != null && numeroDialogue2 != null){
         document.getElementById("button2").innerHTML = NomBouton2;
         document.getElementById('button2').setAttribute('onclick','story('+numeroDialogue2+')');
+    }else{
+        document.getElementById("button2").style.display = "none";
     }
     if(NomBouton3 != null && numeroDialogue3 != null){
         document.getElementById("button3").innerHTML = NomBouton3;
         document.getElementById('button3').setAttribute('onclick','story('+numeroDialogue3+')');
-    }
-    if(NomBouton4 == null && numeroDialogue4 == null){
-        document.getElementById("button4").innerHTML = NomBouton3;
-        document.getElementById('button4').setAttribute('onclick','story('+numeroDialogue4+')');
+    }else{
+        document.getElementById("button3").style.display = "none";
     }
 }
 

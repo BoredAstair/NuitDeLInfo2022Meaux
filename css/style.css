@@ -7,4 +7,139 @@
 #background{
     height: 100vh; 
     width: 100vw;
+    z-index: -1;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.button_choice{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFEEF7;
+    border: 3px solid #F2A0CD;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.personnage{
+    height: 200px;
+    width: 200px;
+}
+#header{
+    height: 10vh;
+    width: 100vw;
+}
+#content{
+    height: 65vh;
+    width: 100vw;
+    padding-bottom: 1em;
+}
+
+#footer{
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(15px) brightness(1.3);
+}
+.footer_part{
+    width: 50vw;
+    height: 100%;
+}
+
+#footer_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer_circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: -80px;
+    background-color: #F2059F;
+
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items:center;
+}
+#textbox{
+    width: 80%;
+    height: 30%;
+    background-color: #F2A0CD;
+    border: 3px solid #F2059F;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    z-index: 1;
+}
+#textbox_inside{
+    height: 100%;
+    width: 100%;
+    background-color: #FFEEF7;
+    border: 3px solid #F2A0CD;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#author{
+    padding: 5px 5px 0px 5px;
+    background-color: #F2A0CD;
+    border-top: 3px solid #F2059F;
+    border-left: 3px solid #F2059F;
+    border-right: 3px solid #F2059F;
+    border-radius: 20px 20px 0px 0px;
+    z-index: 1;
+
+
+}
+
+#author_inside{
+    min-width: 90px;
+    min-height: 30px;
+    background-color: #FFEEF7;
+
+    border-radius: 20px 20px 0px 0px;
+    padding: 0.2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #F2059F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dialogueText{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+#characters{
+    background-color: aqua;
+    position:absolute;
+    bottom: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
