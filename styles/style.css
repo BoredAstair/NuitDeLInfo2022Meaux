@@ -15,8 +15,6 @@ html {
 }
 
 body {
-    min-width: 1280px;
-    min-height: 720px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -39,12 +37,12 @@ a {
 
 h1 {
     font-size: 4rem;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
     font-size: 3rem;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h3 {
@@ -82,19 +80,45 @@ a:focus {
 }
 
 header {
-    height: 100vh;
+    height: calc(100vh - 5rem);
+    padding-top: 7vh;
+    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+header section {
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header p {
+    width: 60%;
+}
+
+footer {
+    height: 300px;
+    background-color: black;
 }
 
 .navbar {
+    z-index: 5000;
     top: 0;
-    width: 100vw;
     background-color: white;
-    position: fixed;
+    position: sticky;
     height: 5rem;
     border-bottom: 2px solid black;
     display: flex;
@@ -118,14 +142,17 @@ header {
     border-radius: 10px;
     transition: 0.5s ease;
 }
+
 .cta-game:hover {
     transform: translateY(5px);
     transition: 0.5s ease;
 
 }
 
-/* game */
-
-.game-container {
-    margin-top: 5rem;
+.persos-accueil {
+    height: 40%;
+    z-index: -1000000;
+    position: relative;
 }
+
+/* game */
