@@ -133,6 +133,13 @@ footer {
   font-weight: 800;
 }
 
+.navbar .logo {
+  position: absolute;
+  left: 0;
+  margin-left: 1.5rem;
+  
+}
+
 .cta-game {
   color: white;
   padding: 0.8rem 1.8rem;
