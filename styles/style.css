@@ -1,3 +1,7 @@
+/* contents : texts, links, sections, game */
+
+
+
 *,
 *::after,
 *::before {
@@ -34,6 +38,26 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
 /* links */
 
 a {
@@ -58,6 +82,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .navbar {
@@ -71,3 +96,15 @@ header {
     justify-content: center;
     gap: 5rem;
 }
+
+.cta-game {
+    color: white;
+    padding: 0.8rem 1.8rem;
+    background-color: rgb(255, 76, 76);
+    border-radius: 5px;
+}
+
+
+
+/* game */
+
