@@ -5,6 +5,16 @@
 //GAME.HTML
 
 
+//Liste des emotions avec les images associèes à chaque personnage
+var Monika = {
+    "joyeux": "test.jpg",
+    "triste": "test2.jpg"
+}
+var Natsuki = {
+    "joyeux": "test.jpg",
+    "triste": "test2.jpg"
+}
+
 
 //##################################################################################################
 //##################################################################################################
@@ -18,6 +28,8 @@ function story(dialogueActuel){
             setBackground("test.jpg"); //On choisit le background du dialogue 1
             setDialogueText("Monika","Bonjour, je suis un test"); //On choisit l'auteur et le texte du dialogue 1
             setButtons("Suivant", 1, "Précédent", 0); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("left", Monika.joyeux); //On choisit quel spirte afficher et où
+
 
             
             break;
@@ -66,6 +78,18 @@ function setBackground(string){
 function setDialogueText(auteur, contenu){
     document.getElementById("auteur").innerHTML = auteur;
     document.getElementById("dialogueText").innerHTML = string;
+}
+
+//NE PAS TOUCHER
+//Actualise le sprite des personnages
+//Exemple : setCharacter("left", Monika.joyeux);
+function setCharacter(position, personnage){
+    if(position == "left"){
+        document.getElementById("background").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
+    }
+    if(position == "right"){
+        document.getElementById("characterRight").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
+    }
 }
 
 
