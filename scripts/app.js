@@ -8,12 +8,12 @@ function renderScreen(screen) {
         </div>
         <div class="personnages">
             ${screen.personnages.map(perso => (
-                `Perso : ${perso.nom}<br>` 
-            )).join('')}
+        `Perso : ${perso.nom}<br>`
+    )).join('')}
         </div>
         ${screen.choix.map(choix => (
-            `<button class="button-story" data-target="${choix.target}">${choix.buttonText}</button>`
-        )).join('')}
+        `<button class="button-story" data-target="${choix.target}">${choix.buttonText}</button>`
+    )).join('')}
     <section>`;
 
     document.querySelector('#game').innerHTML = html;
