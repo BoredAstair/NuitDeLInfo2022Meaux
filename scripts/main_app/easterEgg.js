@@ -26,4 +26,4 @@ This is a comment that can span multiple lines
 - use comments to make your own notes!
 */
 
-const easterEgg = new Konami(() => alert("La grosse daronne de bruno!"))
+const easterEgg = new Konami(() => window.location = ("pageDeg.html"))
