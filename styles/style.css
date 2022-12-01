@@ -3,13 +3,13 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  height: 100%;
-  margin: 0;
-  scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
     min-height: 100vh;
     max-width: 100vw;
 }
+
 
 /* texts et fonts */
 
@@ -30,7 +31,7 @@ h5,
 h6,
 p,
 a {
-  margin: 0;
+    margin: 0;
 }
 
 h1 {
@@ -44,27 +45,28 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
-  font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+    font-family: 'DM Sans', sans-serif;
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
 }
 
 p {
-  font-size: 1rem;
-  font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
 }
+
 
 /* links */
 
 a {
-  font-weight: 800;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  font-family: 'DM Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
 }
 
 a,
@@ -72,9 +74,9 @@ a:hover,
 a:active,
 a:visited,
 a:focus {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 header {
@@ -126,31 +128,30 @@ footer {
 }
 
 .navbar a {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .navbar a:hover {
-  font-weight: 800;
+    font-weight: 800;
 }
 
 .navbar .logo {
-  position: absolute;
-  left: 0;
-  margin-left: 1.5rem;
-  
+    position: absolute;
+    left: 0;
+    margin-left: 1.5rem;
 }
 
 .cta-game {
-  color: white;
-  padding: 0.8rem 1.8rem;
-  background-color: rgb(255, 88, 88);
-  border-radius: 10px;
-  transition: 0.5s ease;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    background-color: rgb(255, 88, 88);
+    border-radius: 10px;
+    transition: 0.5s ease;
 }
 
 .cta-game:hover {
-  transform: translateY(5px);
-  transition: 0.5s ease;
+    transform: translateY(5px);
+    transition: 0.5s ease;
 }
 
 .persos-accueil {
@@ -159,202 +160,176 @@ footer {
     position: relative;
 }
 
+
 /* game */
 
 .game-container {
-  height: calc(100vh - 5rem);
+    height: calc(100vh - 5rem);
 }
 
 .center {
-  height: calc(100vh - 5rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .center p {
-  width: 60%;
+    width: 60%;
 }
 
 .character-story-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .character-story {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background-color: pink;
-  width: 200px;
-  height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: pink;
+    width: 200px;
+    height: 200px;
 }
 
 .character-story img {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
 
-.game-container #game {
-}
+.game-container #game {}
 
 .game-container #game .bubble {
-  background-color: white;
-  border: solid 2px black;
-  position: absolute;
-  margin: 5vh 5vw;
-  width: calc(100vw - 10vw);
-  padding: 1.5rem;
-  bottom: 0;
-  border-radius: 15px;
+    background-color: white;
+    border: solid 2px black;
+    position: absolute;
+    margin: 5vh 5vw;
+    width: calc(100vw - 10vw);
+    padding: 1.5rem;
+    bottom: 0;
+    border-radius: 15px;
+}
+
+.game-container #game .bubble .button-story,
+.game-container #game .bubble #explaination #continue {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 88, 88);
+    padding: 0.8rem 1.8rem;
+    border: solid 2px rgb(255, 88, 88);
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.game-container #game .bubble .button-story:hover,
+.game-container #game .bubble #explaination #continue:hover {
+    color: white;
+    background-color: rgb(255, 88, 88);
+    border: solid 2px rgb(255, 88, 88);
+    transform: translateY(2px);
+    transition: 0.5s ease;
 }
 
 
-/* //////////page infos//////////////// */
-.car_container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 6rem;
-}
-@media (max-width: 60em) {
-  .car_container {
-    padding: 3rem;
-  }
-}
+/* ////////////////////////// */
 
 .grid {
-  display: grid;
-  width: 114rem;
-  grid-gap: 6rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  align-items: start;
+    display: grid;
+    width: 114rem;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
 }
+
 @media (max-width: 60em) {
-  .grid {
-    grid-gap: 3rem;
-  }
+    .grid {
+        grid-gap: 3rem;
+    }
 }
+
 .grid__item {
-  background-color: #fff;
-  border-radius: 0.4rem;
-  overflow: hidden;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: 0.2s;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
 }
+
 .grid__item:hover {
-  transform: translateY(-0.5%);
-  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 }
 
 .card__img {
-  display: block;
-  width: 100%;
-  height: 18rem;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
 }
+
 .card__content {
-  padding: 3rem 3rem;
+    padding: 3rem 3rem;
 }
+
 .card__header {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #0d0d0d;
-  margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
 }
+
 .card__text {
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.7;
-  color: #3d3d3d;
-  margin-bottom: 2.5rem;
-}
-.card__btn1 {
-  display: block;
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #ffffff;
-  background-color: #F5BF7B;
-  border: none;
-  border-radius: 0.4rem;
-  transition: 0.2s;
-  cursor: pointer;
-}
-.card__btn2 {
-  display: block;
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #ffffff;
-  background-color: #81B4D7;
-  border: none;
-  border-radius: 0.4rem;
-  transition: 0.2s;
-  cursor: pointer;
-}
-.card__btn3 {
-  display: block;
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #ffffff;
-  background-color: #CC3A41;
-  border: none;
-  border-radius: 0.4rem;
-  transition: 0.2s;
-  cursor: pointer;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
 }
 
-.card__btn1 span {
-  margin-left: 1rem;
-  transition: 0.2s;
-}
-.card__btn1:hover, .card__btn1:active {
-  background-color: #ffd9aa;
-}
-.card__btn1:hover span, .card__btn1:active span {
-  margin-left: 1.5rem;
-}
-
-.card__btn2 span {
-  margin-left: 1rem;
-  transition: 0.2s;
-}
-.card__btn2:hover, .card__btn2:active {
-  background-color: #a6c5d9;
-}
-.card__btn2:hover span, .card__btn2:active span {
-  margin-left: 1.5rem;
+.card__btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #e6ecff;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-.card__btn3 span {
-  margin-left: 1rem;
-  transition: 0.2s;
-}
-.card__btn3:hover, .card__btn3:active {
-  background-color: #c87b7f;
-}
-.card__btn3:hover span, .card__btn3:active span {
-  margin-left: 1.5rem;
+.card__btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
 }
 
-.info_txt{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 1%;
+.card__btn:hover,
+.card__btn:active {
+    background-color: #dce4ff;
+}
+
+.card__btn:hover span,
+.card__btn:active span {
+    margin-left: 1.5rem;
+}
+
+.info_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
 }
