@@ -1,27 +1,25 @@
 /* contents : texts, links, sections, game */
 
-
-
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    margin: 0;
-    scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    min-width: 1280px;
-    min-height: 720px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-    max-width: 100vw;
+  min-width: 1280px;
+  min-height: 720px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 /* texts et fonts */
@@ -34,41 +32,41 @@ h5,
 h6,
 p,
 a {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    font-size: 4rem;
-    font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 4rem;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h2 {
-    font-size: 3rem;
-    font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 3rem;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h3 {
-    font-size: 2rem;
-    font-family: 'DM Sans', sans-serif;
+  font-size: 2rem;
+  font-family: 'DM Sans', sans-serif;
 }
 
 h4 {
-    font-size: 1.5rem;
-    font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
 }
 
 p {
-    font-size: 1rem;
-    font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* links */
 
 a {
-    font-weight: 800;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    font-family: 'DM Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: 'DM Sans', sans-serif;
 }
 
 a,
@@ -76,56 +74,55 @@ a:hover,
 a:active,
 a:visited,
 a:focus {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 header {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .navbar {
-    top: 0;
-    width: 100vw;
-    background-color: white;
-    position: fixed;
-    height: 5rem;
-    border-bottom: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
+  top: 0;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  height: 5rem;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
 }
 
 .navbar a {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .navbar a:hover {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 .cta-game {
-    color: white;
-    padding: 0.8rem 1.8rem;
-    background-color: rgb(255, 88, 88);
-    border-radius: 10px;
-    transition: 0.5s ease;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  background-color: rgb(255, 88, 88);
+  border-radius: 10px;
+  transition: 0.5s ease;
 }
 .cta-game:hover {
-    transform: translateY(5px);
-    transition: 0.5s ease;
-
+  transform: translateY(5px);
+  transition: 0.5s ease;
 }
 
 /* game */
 
 .game-container {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
