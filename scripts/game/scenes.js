@@ -1,58 +1,63 @@
 export const scenes = [
   {
-    id: 'maison',
+    id: 'didacticiel',
 
-    story: 'Lorem ispume blabla maison',
+    story:
+      'Lucas arrive à la soirée avec ses potes, il repère très vite Noémie et lui propose un verre. Quel verre proposer à Noémie ?',
 
     characters: [
-      { image: 'perso1.jpg', name: 'Michel', text: 'Salut Lucie' },
-      { image: 'perso2.jpg', name: 'Lucie', text: 'Salut Michel' },
+      { image: 'perso1.jpg', name: 'Noémie', text: '' },
+      { image: 'perso2.jpg', name: 'Lucas', text: '' },
     ],
 
     choice: [
       {
-        text: 'Aller dans la cuisine',
-        target: 'cuisine',
-        explaination: 'Vous avez cliqué sur cuisine',
+        text: 'Jack Coca',
+        target: 'start',
+        explaination: 'Vous avez choisi de lui offrir un verre de Jack Coca',
       },
       {
-        text: 'Aller dans la maison',
-        target: 'maison',
-        explaination: 'Vous avez cliqué sur maison',
-      },
-      {
-        text: 'Aller dans la salle dfe bin',
-        target: 'sdb',
-        explaination: 'Vous avez cliqué sur salle de bain',
+        text: 'Coca Cola',
+        target: 'start',
+        explaination: 'Vous avez choisi de lui offrir un verre de Coca Cola',
       },
     ],
   },
   // ============================================================================
   {
-    id: 'cuisine',
+    id: 'start',
 
-    story: 'Lorem ispume blabla cuisine',
+    story:
+      "Noémie accepte le verre avec plaisir, ils commencent à discuter, à faire connaissance. Ils dansent enssemble, la tension monte. L'ambiguité ne manque pas. Ils décident donc de s'isoler pour continuer la soirée. Ils rentrent dans la chambre, commencent à se caliner, se déshabiller. Noémie est de plus en plus tactile et lui met la main au paquet.",
 
     characters: [
-      { image: 'perso1.jpg', name: 'Michel', text: 'Salut Aurélien' },
-      { image: 'perso3.jpg', name: 'Aurélien', text: 'Salut Michel' },
+      { image: 'perso1.jpg', name: 'Noémie', text: '' },
+      { image: 'perso2.jpg', name: 'Lucas', text: '' },
     ],
 
     choice: [
       {
-        text: 'Aller dans la maison',
-        target: 'maison',
-        explaination: 'Vous avez cliqué sur maison',
+        text: "J'accepte les avances",
+        target: 'go',
+        explaination: 'Vous avez choisi de continuer',
+      },
+      {
+        text: 'Je me sens réticent et stop net Noémie',
+        target: 'stop',
+        explaination: "Vous avez choisi d'arrêter là",
       },
     ],
   },
   // ============================================================================
   {
-    id: 'sdb',
+    id: 'go',
 
     story: 'Lorem ispume blabla salle de bain',
 
-    characters: [{ image: 'perso1.jpg', name: 'Michel', text: 'Salut SALLE DE BAIN' }],
+    characters: [
+      { image: 'perso1.jpg', name: 'Noémie', text: '' },
+      { image: 'perso2.jpg', name: 'Lucas', text: '' },
+    ],
 
     choice: [
       {
@@ -60,6 +65,17 @@ export const scenes = [
         target: 'maison',
         explaination: 'Vous avez cliqué sur maison',
       },
+    ],
+  },
+  {
+    id: 'stop',
+
+    story:
+      "Noémie est compréhensive. Ils se rhabillent et retournent tranquillement profiter de la fête. Plus tard dans la soirée, il décide d'appeler sa meilleure amie Aurélie afin qu'elle le dépose chez lui en voiture.",
+
+    characters: [
+      { image: 'perso1.jpg', name: 'Noémie', text: '' },
+      { image: 'perso2.jpg', name: 'Lucas', text: '' },
     ],
   },
 ];
