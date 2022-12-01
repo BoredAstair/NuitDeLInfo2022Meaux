@@ -12,8 +12,6 @@ export const scenes = [
         { buttonText: "Aller dans la maison", target: "maison" },
         { buttonText: "Aller dans la salle dfe bin", target: "sdb" }
     ],
-
-    
   },
 
   {
