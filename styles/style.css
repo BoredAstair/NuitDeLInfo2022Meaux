@@ -180,7 +180,19 @@ footer {
 }
 
 
-/* ////////////////////////// */
+/* //////////page infos//////////////// */
+.car_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 6rem;
+}
+@media (max-width: 60em) {
+  .car_container {
+    padding: 3rem;
+  }
+}
+
 .grid {
   display: grid;
   width: 114rem;
@@ -228,26 +240,83 @@ footer {
   color: #3d3d3d;
   margin-bottom: 2.5rem;
 }
-.card__btn {
+.card__btn1 {
   display: block;
   width: 100%;
   padding: 1.5rem;
   font-size: 2rem;
   text-align: center;
-  color: #3363ff;
-  background-color: #e6ecff;
+  color: #ffffff;
+  background-color: #F5BF7B;
   border: none;
   border-radius: 0.4rem;
   transition: 0.2s;
   cursor: pointer;
 }
-.card__btn span {
+.card__btn2 {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #81B4D7;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card__btn3 {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #CC3A41;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card__btn1 span {
   margin-left: 1rem;
   transition: 0.2s;
 }
-.card__btn:hover, .card__btn:active {
-  background-color: #dce4ff;
+.card__btn1:hover, .card__btn1:active {
+  background-color: #ffd9aa;
 }
-.card__btn:hover span, .card__btn:active span {
+.card__btn1:hover span, .card__btn1:active span {
   margin-left: 1.5rem;
+}
+
+.card__btn2 span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card__btn2:hover, .card__btn2:active {
+  background-color: #a6c5d9;
+}
+.card__btn2:hover span, .card__btn2:active span {
+  margin-left: 1.5rem;
+}
+
+.card__btn3 span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card__btn3:hover, .card__btn3:active {
+  background-color: #c87b7f;
+}
+.card__btn3:hover span, .card__btn3:active span {
+  margin-left: 1.5rem;
+}
+
+.info_txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1%;
 }
