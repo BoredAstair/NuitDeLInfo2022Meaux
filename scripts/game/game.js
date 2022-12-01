@@ -6,7 +6,7 @@ import { delegateEventListener } from '../utils/functions.js';
 
 function renderScreen(screen) {
   const html = `
-  <section>
+  <section class="bubble">
 
     <div class="question">
       Écran : #${screen.id}

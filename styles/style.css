@@ -160,3 +160,21 @@ footer {
 }
 
 /* game */
+
+.game-container {
+  height: calc(100vh - 5rem);
+}
+
+.game-container #game {
+}
+
+.game-container #game .bubble {
+  background-color: white;
+  border: solid 2px black;
+  position: absolute;
+  margin: 5vh 5vw;
+  width: calc(100vw - 10vw);
+  padding: 1.5rem;
+  bottom: 0;
+  border-radius: 15px;
+}

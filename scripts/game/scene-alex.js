@@ -2,7 +2,7 @@ export const scenesAlex = [
   {
     id: 'didacticiel',
 
-    story: 'Aurélie dit coucou',
+    story: 'Alex dit coucou',
 
     choice: [
       {
