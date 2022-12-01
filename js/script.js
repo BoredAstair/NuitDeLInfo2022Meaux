@@ -3,6 +3,12 @@
 
 
 //GAME.HTML
+if(window.location.href.indexOf("game.html") > -1) {
+    loadGame();
+}
+
+
+
 
 
 //Liste des emotions avec les images associèes à chaque personnage
@@ -23,6 +29,7 @@ var Natsuki = {
 //Cette fonction actualise tout le contenu de la page
 //Cette fonction est appellée par les boutons uniquement.
 function story(dialogueActuel){ 
+    saveGame();
     switch (dialogueActuel) {
         case 0: //Premier dialogue du jeu
             setBackground("test.jpg"); //On choisit le background du dialogue 1
@@ -46,7 +53,7 @@ function story(dialogueActuel){
             break;
     
         default:
-            alert("Erreur");
+            alert("Erreur / Histoire inexistante");
             break;
     }
 }
@@ -54,6 +61,22 @@ function story(dialogueActuel){
 //##################################################################################################
 //##################################################################################################
 
+//NE PAS TOUCHER
+function saveGame(){
+    localStorage.setItem("dialogueActuel", dialogueActuel);
+}
+
+//NE PAS TOUCHER
+
+function loadGame(){
+    if(localStorage.getItem("dialogueActuel") !== null){
+        dialogueActuel = localStorage.getItem("dialogueActuel");
+        story(dialogueActuel);
+    }else{
+        alert("Aucune sauvegarde trouvée - Redirection au Index.html");
+        window.location.href = "index.html";
+    }
+}
 
 //NE PAS TOUCHER
 let dialogueActuel = 0; //Variable  pour suivre l'avancée de l'utilisateur dans le jeu
