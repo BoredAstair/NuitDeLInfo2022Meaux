@@ -15,9 +15,9 @@
 function story(dialogueActuel){ 
     switch (dialogueActuel) {
         case 0: //Premier dialogue du jeu
-            setBackground("test.jpg");
-            setDialogueText("Monika","Bonjour, je suis un test");
-            setButtons("Suivant", 1, "Précédent", 0);
+            setBackground("test.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Monika","Bonjour, je suis un test"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Suivant", 1, "Précédent", 0); //On choisit le nom des boutons et le dialogue auquel ils ramènent
 
             
             break;
@@ -42,8 +42,9 @@ function story(dialogueActuel){
 //##################################################################################################
 //##################################################################################################
 
-let dialogueActuel = 0; //Variable  pour suivre l'avancée de l'utilisateur dans le jeu
 
+//NE PAS TOUCHER
+let dialogueActuel = 0; //Variable  pour suivre l'avancée de l'utilisateur dans le jeu
 function next(){
     story(dialogueActuel+1);
 }
