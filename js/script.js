@@ -4,18 +4,14 @@
 
 //GAME.HTML
 
-let dialogueActuel = 0; //Variable  pour suivre l'avancée de l'utilisateur dans le jeu
-
-function next(){
-    story(dialogueActuel+1);
-}
-function previous(){
-    story(dialogueActuel-1);
-}
 
 
+//##################################################################################################
+//##################################################################################################
+
+//REDACTION DE L'HISTOIRE ICI
 //Cette fonction actualise tout le contenu de la page
-//Cette fonction est appellée par une next() ou previous() uniquement.
+//Cette fonction est appellée par les boutons uniquement.
 function story(dialogueActuel){ 
     switch (dialogueActuel) {
         case 0: //Premier dialogue du jeu
@@ -43,6 +39,18 @@ function story(dialogueActuel){
     }
 }
 
+//##################################################################################################
+//##################################################################################################
+
+let dialogueActuel = 0; //Variable  pour suivre l'avancée de l'utilisateur dans le jeu
+
+function next(){
+    story(dialogueActuel+1);
+}
+function previous(){
+    story(dialogueActuel-1);
+}
+//NE PAS TOUCHER
 //Affiche l'image de votre choix dans le background
 //Exemple : setBackground("test.jpg");
 function setBackground(string){
@@ -50,6 +58,8 @@ function setBackground(string){
     document.getElementById("background").style.backgroundImage = string;
 }
 
+
+//NE PAS TOUCHER
 //Affiche le texte de votre choix dans le dialogue
 //Exemple : setDialogueText("Monika", "Bonjour, je suis un test");
 function setDialogueText(auteur, contenu){
@@ -57,6 +67,8 @@ function setDialogueText(auteur, contenu){
     document.getElementById("dialogueText").innerHTML = string;
 }
 
+
+//NE PAS TOUCHER
 //Actualise le texte contenu dans les boutons
 //Exemple : setButtons("Suivant", 1, "Précédent", 0); Le bouton "Suivant" ramènera vers le dialogue N°1 et le bouton "Précédent" ramènera vers le dialogue N°0 
 function setButtons(NomBouton1, numeroDialogue1, NomBouton2, numeroDialogue2, NomBouton3, numeroDialogue3, NomBouton4, numeroDialogue4){
