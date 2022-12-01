@@ -8,19 +8,23 @@
   <title>Jeu</title>
   <link rel="stylesheet" href="styles/style.css" type="text/css">
 
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+  <link rel="icon" href="img/logo.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Sans:wght@700&family=Poppins:wght@700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Sans:wght@700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
 
-
-  <script src="scripts/game/app.js" type="module"></script>
+  <script src="scripts/game/game.js" type="module"></script>
 </head>
 
 <body>
   <nav class="navbar">
-    <img src="./img/logo.png" style="height:3rem;">
+    <img class="logo" src="./img/logo.png" style="height:2.5rem">
     <a href="index.html">Accueil</a>
     <a href="game.html">Jeu</a>
     <a href="">Plus d'infos</a>
@@ -29,6 +33,10 @@
     <!-- <h1>Le jeu :</h1>
         <hr> -->
     <main id="game">
+
+      <button class="character-story" data-character="lucas">Lucas</button>
+      <button class="character-story" data-character="aurelie">Aurélie</button>
+      <button class="character-story" data-character="alex">Alex</button>
 
     </main>
   </div>

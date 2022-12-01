@@ -133,6 +133,13 @@ footer {
   font-weight: 800;
 }
 
+.navbar .logo {
+  position: absolute;
+  left: 0;
+  margin-left: 1.5rem;
+  
+}
+
 .cta-game {
   color: white;
   padding: 0.8rem 1.8rem;
@@ -153,3 +160,21 @@ footer {
 }
 
 /* game */
+
+.game-container {
+  height: calc(100vh - 5rem);
+}
+
+.game-container #game {
+}
+
+.game-container #game .bubble {
+  background-color: white;
+  border: solid 2px black;
+  position: absolute;
+  margin: 5vh 5vw;
+  width: calc(100vw - 10vw);
+  padding: 1.5rem;
+  bottom: 0;
+  border-radius: 15px;
+}
