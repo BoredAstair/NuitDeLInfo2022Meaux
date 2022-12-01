@@ -59,7 +59,7 @@ function setDialogueText(auteur, contenu){
 
 //Actualise le texte contenu dans les boutons
 //Exemple : setButtons("Suivant", 1, "Précédent", 0); Le bouton "Suivant" ramènera vers le dialogue N°1 et le bouton "Précédent" ramènera vers le dialogue N°0 
-function setButtons(NomBouton1, numeroDialogue1, NomBouton2, numeroDialogue2, NomBouton3, numeroDialogue3){
+function setButtons(NomBouton1, numeroDialogue1, NomBouton2, numeroDialogue2, NomBouton3, numeroDialogue3, NomBouton4, numeroDialogue4){
     if(NomBouton1 != null && numeroDialogue1 != null){
         document.getElementById("button1").innerHTML = NomBouton1;
         document.getElementById('button1').setAttribute('onclick','story('+numeroDialogue1+')');
@@ -73,8 +73,8 @@ function setButtons(NomBouton1, numeroDialogue1, NomBouton2, numeroDialogue2, No
         document.getElementById('button3').setAttribute('onclick','story('+numeroDialogue3+')');
     }
     if(NomBouton4 == null && numeroDialogue4 == null){
-        document.getElementById("button4").innerHTML = "";
-        document.getElementById('button4').setAttribute('onclick','');
+        document.getElementById("button4").innerHTML = NomBouton3;
+        document.getElementById('button4').setAttribute('onclick','story('+numeroDialogue4+')');
     }
 }
 
