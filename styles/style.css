@@ -35,27 +35,31 @@ h6,
 p,
 a {
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
     font-size: 4rem;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h2 {
     font-size: 3rem;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 h3 {
     font-size: 2rem;
+    font-family: 'DM Sans', sans-serif;
 }
 
 h4 {
     font-size: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
 }
 
 p {
     font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
 }
 
 /* links */
@@ -64,6 +68,7 @@ a {
     font-weight: 800;
     font-size: 1.1rem;
     line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
 }
 
 a,
@@ -86,6 +91,7 @@ header {
 }
 
 .navbar {
+    top: 0;
     width: 100vw;
     background-color: white;
     position: fixed;
@@ -118,6 +124,8 @@ header {
 
 }
 
-
-
 /* game */
+
+.game-container {
+    margin-top: 5rem;
+}
