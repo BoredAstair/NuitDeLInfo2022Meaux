@@ -6,14 +6,14 @@ function renderScreen(screen) {
         <div class="question">
             ID de l'écran : ${screen.id}
         </div>
-        <div class="personnages">
-            ${screen.personnages.map(perso => (
-        `Perso : ${perso.nom}<br>`
-    )).join('')}
+        <div class="characters">
+            ${screen.characters.map(character => (
+                `Perso : ${character.name}<br>` 
+            )).join('')}
         </div>
-        ${screen.choix.map(choix => (
-        `<button class="button-story" data-target="${choix.target}">${choix.buttonText}</button>`
-    )).join('')}
+        ${screen.choice.map(choice => (
+            `<button class="button-story" data-target="${choice.target}">${choice.text}</button>`
+        )).join('')}
     <section>`;
 
     document.querySelector('#game').innerHTML = html;
