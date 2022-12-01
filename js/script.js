@@ -141,7 +141,7 @@ function setDialogueText(auteur, contenu){
 function setCharacter(position, personnage){
     if(position == "left"){
         //Reset background image
-        document.getElementById("personnage_right").style.display = null;
+        document.getElementById("personnage_right").style.backgroundImage = null;
         document.getElementById("personnage_left").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
     }else{
         document.getElementById("personnage_left").style.backgroundImage = null;
