@@ -1,4 +1,6 @@
-import { scenes } from './scenes.js';
+import { scenesLucas } from './scene-lucas.js';
+import { scenesAurelie } from './scene-aurelie.js';
+
 import { delegateEventListener } from '../utils/functions.js';
 
 function renderScreen(screen) {
@@ -8,10 +10,6 @@ function renderScreen(screen) {
     <div class="question">
       Écran : #${screen.id}
       <p>${screen.story}</p>
-    </div>
-
-    <div class="characters">
-      ${screen.characters.map((character) => `Perso : ${character.name}<br>`).join('')}
     </div>
 
     ${screen.choice
@@ -66,5 +64,21 @@ function showExplaination(explaination, target) {
     `;
 }
 
-// Par défaut, scene n°1
-renderScreen(scenes[0]);
+let scenes = null;
+
+delegateEventListener('click', '.character-story', (event) => {
+  const character = event.target.dataset.character; // Récupère l'attribut "data-character"
+
+  switch (character) {
+    case 'lucas':
+      scenes = scenesLucas;
+      break;
+    case 'aurelie':
+      scenes = scenesAurelie;
+      break;
+  }
+
+  if (scenes) {
+    renderScreen(scenes[0]);
+  }
+});
