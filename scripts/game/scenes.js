@@ -26,7 +26,6 @@ export const scenes = [
   // ============================================================================
   {
     id: 'start',
-
     story:
       "Noémie accepte le verre avec plaisir, ils commencent à discuter, à faire connaissance. Ils dansent enssemble, la tension monte. L'ambiguité ne manque pas. Ils décident donc de s'isoler pour continuer la soirée. Ils rentrent dans la chambre, commencent à se caliner, se déshabiller. Noémie est de plus en plus tactile et lui met la main au paquet.",
 
@@ -39,7 +38,7 @@ export const scenes = [
       {
         text: "J'accepte les avances",
         target: 'go',
-        explaination: 'Vous avez choisi de continuer',
+        explaination: "Vous avez choisi d'accepter",
       },
       {
         text: 'Je me sens réticent et stop net Noémie',
