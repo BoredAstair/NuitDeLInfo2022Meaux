@@ -249,7 +249,7 @@ footer {
   align-content: center;
   padding: 6rem;
 }
-@media (max-width: 60em) {
+@media (max-width: 40em) {
   .car_container {
     padding: 3rem;
   }
@@ -262,7 +262,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: start;
 }
-@media (max-width: 60em) {
+@media (max-width: 40em) {
   .grid {
     grid-gap: 3rem;
   }
