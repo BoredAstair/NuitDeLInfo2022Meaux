@@ -31,7 +31,7 @@ export const scenesAurelie = [{
   id: 'party',
 
   story: [
-    'Pauline : Ecoute j’ai eu rapport sexuel avec Mathieu hier soir mais la capote a craqué…',
+    'Pauline : Ecoute j’ai eu un rapport sexuel avec Mathieu hier soir mais la capote a craqué…',
     'Et j’ai peur des conséquences mais il m’a assuré qu’il s’était retiré avant d’avoir éjaculer.',
     'Je sais pas quoi faire Aurélie…'
   ],
@@ -60,9 +60,9 @@ export const scenesAurelie = [{
   id: 'pro',
 
   story: [
-    'Aurélie : Tu devrais aller voir un gynécologue',
-    'Pauline : Je suis pas à l’aise qu’un inconnu me voit nue',
-    'Aurélie : C’est important vraiment, c’est pour des raisons médicales ne t’en fais pas je t’accompagnerais.',
+    'Aurélie : Tu devrais aller voir un gynécologue.',
+    'Pauline : Je suis pas à l’aise qu’un inconnu me voit nue...',
+    'Aurélie : C’est important, vraiment, c’est pour des raisons médicales ne t’en fais pas je t’accompagnerais.',
     'Pauline appelle un gynécologue mais il n’y a pas de rendez-vous possible pour aujourd’hui. Elle en prend un la semaine suivante. Il est désormais trop tard pour une pilule du lendemain, qui aurait permis de retarder l’ovulation pour éviter une grossesse.',
     'Après des tests, le gynécologue annonce à Pauline qu’elle est enceinte.',
     'Pauline : Aurélie dis moi ce que je devrais faire ?'
@@ -120,9 +120,9 @@ export const scenesAurelie = [{
   story: [
     'Aurélie et Pauline continuent de discuter. Aurélie se rend compte qu’il y a un problème entre Pauline et son copain.',
     'Aurélie : Pauline dis moi ce qu’il se passe ?',
-    'Pauline : Je te jure c’est rien ',
+    'Pauline : Je te jure, c’est rien! ',
     'Aurélie regarde son amie de manière insistante.',
-    'Pauline : Bon hier j\'avais pas tellement envie de le faire mais on avait déjà commencé et puis ça reste mon copain donc il me fera pas de mal'
+    'Pauline : Bon hier j’avais pas tellement envie de le faire mais on avait déjà commencé et puis ça reste mon copain donc il me fera pas de mal.'
   ],
 
   question: 'Que répond Aurélie ?',
