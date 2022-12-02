@@ -186,6 +186,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .character-story {
@@ -198,6 +199,13 @@ footer {
     background-color: pink;
     width: 200px;
     height: 200px;
+    transition: 0.7s ease;
+
+}
+
+.character-story:hover {
+  transform: translateY(-10px);
+  transition: 0.7s ease;
 }
 
 .character-story img {
