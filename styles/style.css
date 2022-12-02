@@ -188,7 +188,6 @@ header p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: pink;
   width: 200px;
   height: 200px;
   transition: 0.7s ease;
