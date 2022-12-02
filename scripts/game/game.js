@@ -84,7 +84,7 @@ function onStoryClick(event) {
     return;
   }
 
-  const story = stories.pop();
+  const story = stories.shift();
 
   questionElement.innerHTML += `<p>${story}</p>`;
 }
