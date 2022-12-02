@@ -11,3 +11,5 @@ export function delegateEventListener(eventName, selector, callback) {
     callback.call(element, event);
   });
 }
+
+AOS.init();

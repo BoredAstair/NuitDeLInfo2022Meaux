@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeu</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
 
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png" />
-    <link rel="icon" href="img/logo.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu</title>
+  <link rel="stylesheet" href="styles/style.css" type="text/css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Sans:wght@700&family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png" />
+  <link rel="icon" href="img/logo.png" />
 
-    <script src="scripts/app/konami.js"></script>
-    <script src="scripts/app/easterEgg.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Sans:wght@700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
 
-    <script src="scripts/discord/discord.js" defer></script>
-  </head>
+  <script src="scripts/app/konami.js"></script>
+  <script src="scripts/app/easterEgg.js"></script>
+  <script src="scripts/utils/functions.js" type="module"></script>
 
-  <body>
-    <!-- Konami code = "UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A" -->
-    <nav class="navbar">
-      <a class="logo" href="index.html"> <img src="./img/logo.png" style="height: 2.5rem" /> </a>
-      <a href="index.html">Accueil</a>
-      <a href="game.html">Jeu</a>
-      <a href="infos.html">Plus d'infos</a>
-    </nav>
-    <header>
-      <section>
-        <h1>Commu' niquez</h1>
+  <script src="scripts/discord/discord.js" defer></script>
+</head>
 
-        <h4>Sous titre qui donne le sujet principal bref t'as capté gro</h4>
+<body>
+  <!-- Konami code = "UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A" -->
+  <nav class="navbar">
+    <a class="logo" href="index.html"> <img src="./img/logo.png" style="height: 2.5rem" /> </a>
+    <a href="index.html">Accueil</a>
+    <a href="game.html">Jeu</a>
+    <a href="infos.html">Plus d'infos</a>
+  </nav>
+  <header>
+    <section>
+      <h1>Commu' niquer</h1>
 
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptatem, repellendus totam distinctio
-          expedita accusamus dolorum non, eligendi nihil, delectus?
-        </p>
-        <a href="game.html">
-          <div class="cta-game">
-            <h4>Play game</h4>
-          </div>
-        </a>
-      </section>
+      <h4>Sous titre qui donne le sujet principal bref t'as capté gro</h4>
 
-      <img class="persos-accueil" src="./img/persos1.png" />
-    </header>
-    <footer>
-      <h3>tmr</h3>
-    </footer>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptatem, repellendus totam distinctio
+        expedita accusamus dolorum non, eligendi nihil, delectus?
+      </p>
+      <a href="game.html">
+        <div class="cta-game">
+          <h4>Play game</h4>
+        </div>
+      </a>
+    </section>
 
-    <ul id="discord-messages"></ul>
-  </body>
+    <img class="persos-accueil" src="./img/persos1.png" />
+  </header>
+  <footer>
+    <div>
+      <img class="communiquez-logo" src="./img/communiquez.png">
+    </div>
+    <div>
+      <h1>bonsoir</h1>
+    </div>
+  </footer>
+
+  <ul id="discord-messages"></ul>
+</body>
+
 </html>
