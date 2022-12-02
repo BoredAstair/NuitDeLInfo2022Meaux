@@ -18,4 +18,9 @@ events.onmessage = (event) => {
     Message de : <strong>${userName}</strong>
     <q>${userMessage}</q>
   </li>`;
+
+  // Supprime la notification du DOM lorsque l'animation est terminée
+  document.querySelectorAll('#discord-messages li').forEach((li) => {
+    li.onanimationend = (event) => li.parentNode.removeChild(li);
+  });
 };
