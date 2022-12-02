@@ -105,9 +105,56 @@ function story(dialogueActuel){
         case 2:
             
             break;
-        case 3:
+        case 600:
+		 setBackground("main.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("username","Putain, pourquoi je stress autant. J’ai hâte de la voir mais si je foire tout. Ah ! Bon, arrête d’y penser tout va bien se passer” il souffle un coup, mais il attend 30 minutes devant"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Suivant", 601); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal; //On choisit quel sprite afficher
             
             break;
+			case 601:
+		 setBackground("main.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," arrive Salut désolé pour le retard elle passe devant lui et ils rentrent dans le resto"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Suivant", 602); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal; //On choisit quel sprite afficher
+			  
+			  break;
+			case 602:
+		 setBackground("main.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Encore désolé pour le retard mais j'avais des trucs super importants avant de venir"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("D'accord mais tu aurais quand même pu me prévenir ", 603, "Non mais il n'y a pas de problème ", 604, " Silence",604); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal; //On choisit quel sprite afficher
+			
+			  break;
+			case 603:
+		 setBackground("main.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Ouais je sais mais j'avais vraiment pas le temps car j'ai un emploi du temps chargé, sinon tu fais quoi ?"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Ok je comprends, bah je suis encore dans le monde des études et toi ?", 605); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal; //On choisit quel sprite afficher
+			
+			break;
+			case 604:
+		 setBackground("main.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Ouais je sais mais j'avais vraiment pas le temps car j'ai un emploi du temps chargé, sinon tu fais quoi ?"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Non mais pas besoin de le prendre comme ça ! elle se lève Vous êtes tous les mêmes ! elle part (the end)", 605); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal; //On choisit quel sprite afficher
+			
+			break;
+			case 605:
+		 setBackground("main.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Oui bien sûr, tu sais c'est une maladie qui se soigne et même elle peut disparaître de mon corps"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Ok je comprends, bah je suis encore dans le monde des études et toi ?", 607, "Oui bien sûr, tu sais c'est une maladie qui se soigne et même elle peut disparaître de mon corps ",607, "Je peux t'expliquer quand même en quoi c'est pas dangereux si je fais attention ",607); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal; //On choisit quel sprite afficher
+			
+			 break;
+			case 607:
+		 setBackground("main.jpg"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," ok m'enfou c'est pas ma faute"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("The end", 602); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal; //On choisit quel sprite afficher
+			
+			
+			
     
         default:
             console.error(dialogueActuel);
