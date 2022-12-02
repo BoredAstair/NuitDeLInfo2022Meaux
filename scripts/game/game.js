@@ -5,9 +5,9 @@ import { delegateEventListener } from '../utils/functions.js';
 
 function renderScreen(screen) {
   const html = `
-  <section class="persos">
-    <img class="perso1" src="${screen.perso1}">
-    <img class="perso2" src="${screen.perso2}">
+  <section class="persos ${screen.background}">
+    <img draggable="false" class="perso1" src="${screen.perso1}">
+    <img draggable="false" class="perso2" src="${screen.perso2}">
   </section>
 
   <section class="bubble">
