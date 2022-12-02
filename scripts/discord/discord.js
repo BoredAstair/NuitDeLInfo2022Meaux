@@ -1,16 +1,21 @@
+// Abonnement à l'Event source du serveur Node qui envoie les messages (via le bot Discord)
 const events = new EventSource('//meauxlotov.alwaysdata.net/events');
 
-const discordMessages = document.querySelector('#discord-messages');
+const discordMessages = document.createElement('ul');
+discordMessages.id = 'discord-messages';
 
-console.log(discordMessages)
+document.body.appendChild(discordMessages);
 
+// À chaque message du serveur …
 events.onmessage = (event) => {
-  const { userName, userMessage } = JSON.parse(event.data);
+  const data = JSON.parse(event.data);
 
-  console.log(userName)
+  if (!data) return;
 
-  discordMessages.innerHTML+= `<li>
-  Message de : <strong>${userName}</strong>
-  <q>${userMessage}</q>
-</li>`;
+  const { userName, userMessage } = data;
+
+  discordMessages.innerHTML += `<li>
+    Message de : <strong>${userName}</strong>
+    <q>${userMessage}</q>
+  </li>`;
 };
