@@ -1,6 +1,6 @@
 import { scenesLucas } from './scene-lucas.js';
 import { scenesAurelie } from './scene-aurelie.js';
-import { scenesAlex } from './scene-alex.js';
+// import { scenesAlex } from './scene-alex.js';
 
 import { delegateEventListener } from '../utils/functions.js';
 
@@ -83,9 +83,9 @@ delegateEventListener('click', '.character-story', (event) => {
     case 'aurelie':
       scenes = scenesAurelie;
       break;
-    case 'alex':
-      scenes = scenesAlex;
-      break;
+    // case 'alex':
+    //   scenes = scenesAlex;
+    //   break;
   }
 
   if (scenes) {
