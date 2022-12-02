@@ -270,6 +270,7 @@ footer {
   overflow: hidden;
   border: solid 2px black;
   cursor: pointer;
+  width: 500px;
   transition: 0.2s;
 }
 .grid__item:hover {
