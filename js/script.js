@@ -140,10 +140,11 @@ function setDialogueText(auteur, contenu){
 //Exemple : setCharacter(Monika.joyeux);
 function setCharacter(position, personnage){
     if(position == "left"){
-        //Reset background image
+        document.getElementById("author").className = "author_right";
         document.getElementById("personnage_right").style.backgroundImage = null;
         document.getElementById("personnage_left").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
     }else{
+        document.getElementById("author").className = "author_left";
         document.getElementById("personnage_left").style.backgroundImage = null;
         document.getElementById("personnage_right").style.backgroundImage = "url('ressources/characters/"+personnage+"')";
     }
