@@ -9,25 +9,48 @@ var Natsuki = {
 }
 var username;
 var color;
+var genre;
 
 //INDEX.HTML
+if(window.location.href.indexOf("game.html") > -1) {
+    loadGame();
+} else {
+    selectGenre("homme");
+    
+}
+
+function selectGenre(genreSelected){
+    if(genreSelected == 'homme'){
+
+        document.getElementById("image1").classList.add("genre_selected");
+        document.getElementById("image2").classList.remove("genre_selected");
+        document.getElementById("image3").classList.remove("genre_selected");
+        genre = "homme";
+    }
+    if(genreSelected == 'femme'){
+        document.getElementById("image1").classList.remove("genre_selected");
+        document.getElementById("image2").classList.add("genre_selected");
+        document.getElementById("image3").classList.remove("genre_selected");
+        genre = "femme";
+        }
+    if(genreSelected == 'autre'){
+        document.getElementById("image1").classList.remove("genre_selected");
+        document.getElementById("image2").classList.remove("genre_selected");
+        document.getElementById("image3").classList.add("genre_selected");
+        genre = "autre";
+    }
+}
+
 function validateInputFields(){
     username = document.getElementById("input_name").value;
-    color = document.getElementById("color").value;
-    if(username != "" && color != ""){
+    if(username != "" && genre != ""){
         localStorage.setItem("username", username);
-        localStorage.setItem("color", color);
+        localStorage.setItem("genre", genre);
         localStorage.setItem("dialogueActuel", 0);
         window.location.href = "game.html";
     }else{
         alert("Veuillez remplir tous les champs");
     }
-}
-
-
-//GAME.HTML
-if(window.location.href.indexOf("game.html") > -1) {
-    loadGame();
 }
 
 
@@ -92,8 +115,18 @@ function loadGame(){
     if(localStorage.getItem("dialogueActuel") !== null){
         dialogueActuel = localStorage.getItem("dialogueActuel");
         username = localStorage.getItem("username");
-        color = localStorage.getItem("color");
+        genre = localStorage.getItem("genre");
+
         story(parseInt(dialogueActuel));
+        if(genre == "homme"){
+            document.getElementById("previsualisation").style.backgroundImage = "url('ressources/characters/boy.png')";
+        }
+        if(genre == "femme"){
+            document.getElementById("previsualisation").style.backgroundImage = "url('ressources/characters/girl.png')";
+        }
+        if(genre == "autre"){
+            document.getElementById("previsualisation").style.backgroundImage = "url('ressources/characters/androgyne.png')";
+        }
     }else{
         alert("Aucune sauvegarde trouvée - Redirection au Index.html");
         window.location.href = "index.html";

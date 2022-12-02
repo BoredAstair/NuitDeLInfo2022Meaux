@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Nuit de l'info EZZZZZ</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <input type="text" id="input_name" placeholder="Entrez votre nom">
-        <input type="color" id="color" value="#000000">
-        <div id="startButton" onclick="validateInputFields()">Valider</div>
-        <script src="js/script.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nuit de l'info EZZZZZ</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="blur">
+            <div id="genre_images">
+                <div id="homme" class="genre" onclick="selectGenre('homme')">
+                    <div id="image1" class="genre_image"></div>
+                    <p>Homme</p>
+                </div>
+                <div id="femme" class="genre" onclick="selectGenre('femme')">
+                    <div id="image2" class="genre_image"></div>
+                    <p>Femme</p>
+                </div>
+                <div id="autre" class="genre" onclick="selectGenre('autre')">
+                    <div id="image3" class="genre_image"></div>
+                    <p>Autre</p>
+                </div>
+            </div>
+            <div id="input_index">
+                <input type="text" id="input_name" placeholder="Entrez votre nom">
+                <div id="startButton" onclick="validateInputFields()">Valider</div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+
 </html>
