@@ -17,12 +17,11 @@ function renderScreen(screen) {
       <h4>${screen.question}</h4>
     </div>
 
+    <div class="buttons">
     ${screen.choice
-      .map(
-        (choice) =>
-          `<button class="button-story" data-target="${choice.target}">${choice.text}</button>`
-      )
+      .map((choice) => `<button class="button-story" data-target="${choice.target}">${choice.text}</button>`)
       .join('')}
+    </div>
     
   <section>`;
 
