@@ -5,12 +5,13 @@ import { scenesAlex } from './scene-alex.js';
 import { delegateEventListener } from '../utils/functions.js';
 
 function renderScreen(screen) {
-  const html = `
+    const html = `
   <section class="bubble">
 
     <div class="question">
       Écran : #${screen.id}
       <p>${screen.story}</p>
+      <h4>${screen.question}</h4>
     </div>
 
     ${screen.choice
