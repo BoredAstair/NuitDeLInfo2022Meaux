@@ -545,6 +545,7 @@ header p {
 }
 
 .info .info-img {
+  border-radius: 15px;
   width: 60vw;
   margin: 48px auto;
 }
