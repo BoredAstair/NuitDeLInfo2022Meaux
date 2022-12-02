@@ -428,6 +428,7 @@ header p {
 }
 
 #discord-messages {
+  border: solid 2px black;
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -438,15 +439,16 @@ header p {
 
 #discord-messages li {
   padding: 1rem;
-  border-radius: 4px;
-  background-color: #3c1d80;
-  color: white;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   animation: disappear 5s 1 forwards;
   font-family: 'DM Sans', sans-serif;
 }
 
 #discord-messages li img {
   vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 #discord-messages li p strong {
@@ -454,12 +456,13 @@ header p {
 }
 
 #discord-messages li a.join-discord {
+  color: black;
   margin-top: 17px;
   display: inline-block;
   font-size: 0.8em;
   font-weight: normal;
   align-items: center;
-  background-color: #150635;
+  background-color: #eeeeee;
   border-radius: 4px;
   padding: 0.2rem 0.5rem;
 }
