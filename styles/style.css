@@ -210,9 +210,6 @@ footer {
   width: 100%;
 }
 
-.game-container #game {
-}
-
 .game-container #game .bubble {
   background-color: white;
   border: solid 2px black;
