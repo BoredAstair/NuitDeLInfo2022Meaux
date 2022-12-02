@@ -106,8 +106,8 @@ header section {
   gap: 1.5rem;
 }
 
-header h1 {
-  text-transform: uppercase;
+header .hometitle {
+    height: 6rem;
 }
 
 header p {
