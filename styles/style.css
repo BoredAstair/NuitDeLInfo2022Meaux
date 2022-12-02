@@ -499,7 +499,7 @@ header p {
 }
 
 .info p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .info .shy-text {
@@ -520,7 +520,7 @@ header p {
 }
 
 .info .text-card p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .info .text-card h2 {
@@ -557,7 +557,7 @@ header p {
 .info ul {
   margin-top: 24px;
   font-family: 'DM Sans';
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .info h3 {
