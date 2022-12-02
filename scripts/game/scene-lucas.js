@@ -5,6 +5,10 @@ export const scenesLucas = [{
 
         question: 'Que propose Lucas ?',
 
+        perso1: '.img/lucas-story.jpg',
+        perso2: '.img/noemie-story.jpg',
+
+
         choice: [{
                 text: 'Jack Coca',
                 target: 'start',
@@ -66,8 +70,8 @@ export const scenesLucas = [{
         question: ' ',
 
         choice: [{
-            text: ' ',
-            target: ' ',
+            text: 'Update',
+            target: 'update',
             explaination: ' '
         }],
     },
@@ -115,7 +119,7 @@ export const scenesLucas = [{
         question: ' ',
 
         choice: [{
-            text: ' ',
+            text: 'Update',
             target: 'update',
             explaination: ' ',
         }],
