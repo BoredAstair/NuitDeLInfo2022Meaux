@@ -1,11 +1,27 @@
 let dialogueActuel;
-var Monika = {
-    "joyeux": "test.jpg",
-    "triste": "test2.jpg"
+var chlara = {
+    "normal": "chlara.png"
 }
-var Natsuki = {
-    "joyeux": "test.jpg",
-    "triste": "test2.jpg"
+var clement = {
+    "normal": "clement.png"
+}
+var paola = {
+    "normal": "paola.png"
+}
+var paolo = {
+    "normal": "paolo.png"
+}
+var sylphia = {
+    "normal": "sylphia.png"
+}
+var sylvain = {
+    "normal": "sylvain.png"
+}
+var vivian = {
+    "normal": "vivian.png"
+}
+var vivh = {
+    "normal": "vivih.png"
 }
 var username;
 var color;
