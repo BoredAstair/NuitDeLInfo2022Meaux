@@ -14,9 +14,16 @@ events.onmessage = (event) => {
 
   const { userName, userMessage } = data;
 
-  discordMessages.innerHTML += `<li>
-    Message de : <strong>${userName}</strong>
-    <q>${userMessage}</q>
+  discordMessages.innerHTML += `
+  <li>
+    <p>
+      Question de <strong>${userName}</strong> sur Discord :
+      <q>${userMessage}</q>
+    </p>
+    <a href="https://discord.gg/mxgCGHpKmG" class="join-discord">
+      <img src="img/discord-icon.svg" width="32">
+      Rejoins le serveur et pose ta question
+    </a>
   </li>`;
 
   // Supprime la notification du DOM lorsque l'animation est terminée
