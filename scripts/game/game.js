@@ -1,11 +1,16 @@
 import { scenesLucas } from './scene-lucas.js';
 import { scenesAurelie } from './scene-aurelie.js';
-import { scenesAlex } from './scene-alex.js';
+// import { scenesAlex } from './scene-alex.js';
 
 import { delegateEventListener } from '../utils/functions.js';
 
 function renderScreen(screen) {
     const html = `
+  <section class="persos">
+    <img class="perso1" src="${screen.perso1}">
+    <img class="perso2" src="${screen.perso2}">
+  </section>
+
   <section class="bubble">
 
     <div class="question">
@@ -78,9 +83,9 @@ delegateEventListener('click', '.character-story', (event) => {
     case 'aurelie':
       scenes = scenesAurelie;
       break;
-    case 'alex':
-      scenes = scenesAlex;
-      break;
+    // case 'alex':
+    //   scenes = scenesAlex;
+    //   break;
   }
 
   if (scenes) {
