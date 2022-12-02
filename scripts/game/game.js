@@ -13,19 +13,21 @@ function renderScreen(screen) {
   <section class="bubble">
 
     <div class="question">
-      <p>${screen.story}</p>
-      <h4>${screen.question}</h4>
     </div>
 
     <div class="buttons">
-    ${screen.choice
-      .map((choice) => `<button class="button-story" data-target="${choice.target}">${choice.text}</button>`)
-      .join('')}
     </div>
     
   <section>`;
 
   document.querySelector('#game').innerHTML = html;
+
+  stories = screen.story;
+  question = screen.question;
+  choices = screen.choice;
+
+  document.addEventListener('click', onStoryClick);
+  onStoryClick();
 }
 
 // Quand on clique sur un bouton de réponse …
@@ -43,6 +45,7 @@ delegateEventListener('click', '.button-story', (event) => {
 
 let scenes = null;
 
+// Choix d'un personnage de départ pour démarrer le jeu …
 delegateEventListener('click', '.character-story', (event) => {
   const character = event.target.dataset.character; // Récupère l'attribut "data-character"
 
@@ -59,3 +62,29 @@ delegateEventListener('click', '.character-story', (event) => {
     renderScreen(scenes[0]);
   }
 });
+
+let stories = [];
+let question = null;
+let choices = null;
+
+function onStoryClick(event) {
+  // Ajout des paragraphe de story au fur et à mesure
+  const questionElement = document.querySelector('#game .question');
+  const buttonsElement = document.querySelector('#game .buttons');
+
+  if (!questionElement) return;
+  if (stories.length === 0) {
+    questionElement.innerHTML += `<h4>${question}</h4>`;
+    buttonsElement.innerHTML += `${choices
+      .map((choice) => `<button class="button-story" data-target="${choice.target}">${choice.text}</button>`)
+      .join('')}`;
+
+    document.removeEventListener('click', onStoryClick);
+
+    return;
+  }
+
+  const story = stories.pop();
+
+  questionElement.innerHTML += `<p>${story}</p>`;
+}
