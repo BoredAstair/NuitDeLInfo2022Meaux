@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#menu{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../ressources/backgrounds/main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#menu_effect {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: brightness(0.8);
+    z-index: 1;
+}
+
+#menu .menu_button{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#menu .main{
+    width: 250px!important;
+    height: 80px!important;
+}
+#spacer{
+    height: 40vh;
+    width: 100vw;
+}
+h2{
+    font-size: 2em;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+#heart{
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+    cursor: pointer;
+    animation: heartbeat 1s infinite;
+    animation-timing-function: cubic-bezier(0.21, 1.05, 0.44, 1.07);
+
+}
+
+@keyframes heartbeat{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

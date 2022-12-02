@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#background{
+    height: 100vh; 
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../ressources/backgrounds/accueil.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#blur{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px) brightness(0.8);
+
+    /* background-color: red; */
+}
+
+#genre_images{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#input_index{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#input_name{
+    height: 45px;
+    width: 75%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#input_name::placeholder {
+    text-align: center; 
+ }
+
+ #startButton{
+    height: 45px;
+    width: 60%;
+    background-color: #00CD21;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1px;
+ }
+
+
+#image1{
+    background-image: url(../ressources/characters/boy.png);
+    background-position: 0px 0px;
+}
+#image2{
+    background-image: url(../ressources/characters/girl.png);
+    background-position: 0px 0px;
+}
+#image3{
+    background-image: url(../ressources/characters/androgyne.png);
+    background-position: -15px 0px;
+}
+.genre_image{
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #F2A0CD;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: white;
+    filter: saturate(0);
+}
+.genre p {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    width: 130px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+}
+
+.genre_selected{
+    border: 3px solid #00CD21;
+
+    filter: saturate(1);
+    transform: scale(1.1);
+
+}
+
+.genre{
+    height: 250px;
+    width: 150px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+ }
+
