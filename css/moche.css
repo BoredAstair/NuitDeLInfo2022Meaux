@@ -1,0 +1,64 @@
+*{background-color:#BADA55;}
+    #text{color : #ffff00;}
+        #limage{height: 100px;}
+                #limage {width: 400px;}
+                    #limage{border: 10px solid black;}
+                        #tablo{border: 5px solid red ;}
+                            #letruc{display: flex;}
+                            #letruc{justify-content: center;}
+                            #letruc{align-items: center;}
+                            #letruc{flex-direction: column;}
+                            #letruc{flex-wrap: wrap;}
+                            #letruc{height: 66px;}
+                            #letruc{width: 65px;}
+                            #letruc{background-color: #80081E;}
+                            #letruc{border-radius: 50%;}
+                            #letruc:hover {background-color: #ba51c5;}
+                            #letruc:hover {transform: translateX(250px);}
+                                table{ color:#51DA;}
+                                table{border: inset 70px #51DA;}
+                                #lilusion{width: 250px;}
+                                #lilusion{height: 250px;}
+                                    button{background-color: #ba1ba1;}
+                                    button:hover {background-color:black;}
+                                    #traktopail{animation: traktopail 1s linear infinite;}
+                                    @keyframes traktopail {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+                                        #elikopter{position: absolute;}
+                                        #elikopter{ top: 1400px;}
+                                        #elikopter{left: 20px;}
+                                        #elikopter{z-index 46;!important;}
+                                            #traktopail2{position: absolute;}
+                                            #traktopail2{top: 1500px;}
+                                            #traktopail2{left: 20px;}
+                                            #traktopail2{padding-bottom: 100px;}
+                                                #ERROR{position: absolute;}
+                                                #ERROR{top: 1700px;}
+                                                #ERROR{left: 20px;}
+                                                #ERROR{padding-bottom: 100px;}
+                                                    #AOA{position: absolute;}
+                                                    #AOA{top: 1800px;}
+                                                    #AOA{left: 200px;}
+                                                    #AOA{padding-bottom: 100px;}
+                                                        #traktopail3{position: absolute;} 
+                                                        #traktopail3{top: 1750px;}
+                                                        #traktopail3{left: -180px;}
+                                                        #traktopail3{padding-bottom: 100px;}
+                                                        #traktopail3{z-index 48;}!important;
+                                                        #traktopail{ height:226;}
+                                                        #traktopail{width:217xp;}
+                                                            #window1{position: absolute;}
+                                                            #window1{ top: 1900px;}
+                                                            #window1{left: 20px;}
+                                                            #window1{padding-bottom: 100px;} 
+                                                            #window1{z-index 48 !important;}
+                                                                #gnooooomed{position: absolute;}
+                                                                #gnooooomed{ top: 2200px;}
+                                                                #gnooooomed{left: 20px;}
+                                                                #gnooooomed{padding-bottom: 100px;}
+                                                                #gnooooomed{z-index 48} !important;
+                                        
+                                        
+                                     
+
+
+                                 
