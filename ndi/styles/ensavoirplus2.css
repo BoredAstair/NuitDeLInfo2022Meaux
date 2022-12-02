@@ -1,0 +1,100 @@
+body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#F1D7C9;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+}
+
+header img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.grid1{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    height: 20vh;
+    width: 100%;
+}
+
+#logo{
+    width: 200px;
+}
+
+.position-logo{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background-color: #ad5a5a;
+    font-family: Oswald;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+}
+
+.position-button{
+    grid-column: 3;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.grid2{
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    height: 70vh;
+    width: 100%; 
+}
+
+#bannier{
+    width: 100%;
+}
+
+.grid3{
+    grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    height: 40vh;
+    width: 100%;
+    background-color: white;
+}
+
+.position-lien{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.centered-bold{
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid4{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    height: 20vh;
+    width: 100%;
+}
+
+.position-reseau{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#logo-insta, #logo-facebook{
+    width: 20px;
+}
