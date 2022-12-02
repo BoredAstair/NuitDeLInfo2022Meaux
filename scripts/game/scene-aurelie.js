@@ -2,7 +2,7 @@ export const scenesAurelie = [{
   id: 'start',
 
   story: [
-    '"Le lendemain d’une soirée, Aurélie se retrouve avec son amie Pauline dans son salon pour discuter de la veille.',
+    'Le lendemain d’une soirée, Aurélie se retrouve avec son amie Pauline dans son salon pour discuter de la veille.',
     'Pauline : Ça a été pour ramener Lucas hier ?',
     'Aurélie : Haha il était dans un sale état, va savoir ce qu’il a fait pendant la soirée lui, et toi alors ?',
   ],
@@ -32,8 +32,8 @@ export const scenesAurelie = [{
 
   story: [
     'Pauline : Ecoute j’ai eu un rapport sexuel avec Mathieu hier soir mais la capote a craqué…',
-    'Et j’ai peur des conséquences mais il m’a assuré qu’il s’était retiré avant d’avoir éjaculer.',
-    'Je sais pas quoi faire Aurélie…'
+    'Et j’ai peur des conséquences mais il m’a assuré qu’il s’était retiré avant d’avoir éjaculé.',
+    'Je ne sais pas quoi faire Aurélie…'
   ],
 
   question: 'Que répond Aurélie ?',
