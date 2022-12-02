@@ -2,7 +2,7 @@ export const scenesAurelie = [{
   id: 'start',
 
   story: [
-    '"Le lendemain d’une soirée, Aurélie se retrouve avec son amie Pauline dans son salon pour discuter de la veille.',
+    'Le lendemain d’une soirée, Aurélie se retrouve avec son amie Pauline dans son salon pour discuter de la veille.',
     'Pauline : Ça a été pour ramener Lucas hier ?',
     'Aurélie : Haha il était dans un sale état, va savoir ce qu’il a fait pendant la soirée lui, et toi alors ?',
   ],
@@ -28,18 +28,18 @@ export const scenesAurelie = [{
 },
 // ============================================================================
 {
-  id: 'party',
+  id: 'discuss',
 
   story: [
     'Pauline : Ecoute j’ai eu un rapport sexuel avec Mathieu hier soir mais la capote a craqué…',
-    'Et j’ai peur des conséquences mais il m’a assuré qu’il s’était retiré avant d’avoir éjaculer.',
-    'Je sais pas quoi faire Aurélie…'
+    'Et j’ai peur des conséquences mais il m’a assuré qu’il s’était retiré avant d’avoir éjaculé.',
+    'Je ne sais pas quoi faire Aurélie…'
   ],
 
   question: 'Que répond Aurélie ?',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
@@ -71,7 +71,7 @@ export const scenesAurelie = [{
   question: 'Que répond Aurélie ?',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
@@ -101,13 +101,13 @@ export const scenesAurelie = [{
   question: '',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
   choice: [{
-    text: '',
-    target: '',
+    text: 'Retour au menu jeu',
+    target: 'JEU',
     explaination: '',
   }],
 },
@@ -128,7 +128,7 @@ export const scenesAurelie = [{
   question: 'Que répond Aurélie ?',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
@@ -157,13 +157,13 @@ export const scenesAurelie = [{
   question: '',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
   choice: [{
-    text: '',
-    target: '',
+    text: 'Retour au menu jeu',
+    target: 'JEU',
     explaination: '',
   }],
 },

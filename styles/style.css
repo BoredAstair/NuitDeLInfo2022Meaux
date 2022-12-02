@@ -106,8 +106,8 @@ header section {
   gap: 1.5rem;
 }
 
-header h1 {
-  text-transform: uppercase;
+header .hometitle {
+    height: 6rem;
 }
 
 header p {
@@ -211,7 +211,6 @@ header p {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .character-story {
@@ -396,10 +395,6 @@ header p {
   cursor: pointer;
 }
 
-.card__btn1:hover,
-.card__btn1:active {
-  color: #ffd9aa;
-}
 
 .card__btn1 span,
 .card__btn2 span,
@@ -407,9 +402,15 @@ header p {
   transition: 0.2s;
 }
 
-.card__btn2:hover,
-.card__btn2:active {
-  color: #a6c5d9;
+.card__btn1 span {
+  color: #cccc3a;
+}
+.card__btn2 span {
+  color: #4f4add;
+}
+
+.card__btn3 span {
+  color: #cc3a41;
 }
 
 .card__btn1:hover span,
@@ -419,11 +420,6 @@ header p {
 .card__btn3:hover span,
 .card__btn3:active span {
   margin-left: 1rem;
-}
-
-.card__btn3:hover,
-.card__btn3:active {
-  color: #c87b7f;
 }
 
 .info_txt {
@@ -503,7 +499,7 @@ header p {
 }
 
 .info p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .info .shy-text {
@@ -524,7 +520,7 @@ header p {
 }
 
 .info .text-card p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .info .text-card h2 {
@@ -549,6 +545,7 @@ header p {
 }
 
 .info .info-img {
+  border-radius: 15px;
   width: 60vw;
   margin: 48px auto;
 }
@@ -560,7 +557,7 @@ header p {
 .info ul {
   margin-top: 24px;
   font-family: 'DM Sans';
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .info h3 {

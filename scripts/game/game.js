@@ -36,6 +36,10 @@ delegateEventListener('click', '.button-story', (event) => {
 
   // Récupère les informations "data-target" de l'élément cliqué
   const target = element.dataset.target;
+  if (target == "JEU") {
+    window.location.href = "game.html";
+    return
+  }
 
   // Récupère l'index de la scene correspondant à la target
   const idScene = scenes.findIndex((s) => s.id === target);
