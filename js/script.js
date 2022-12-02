@@ -20,7 +20,7 @@ var sylvain = {
 var vivian = {
     "normal": "vivian.png"
 }
-var vivh = {
+var Vivih = {
     "normal": "vivih.png"
 }
 var username;
@@ -105,120 +105,57 @@ function story(dialogueActuel){
         case 2:
             
             break;
-       
-	   case 300:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("username","Putain, pourquoi je stress autant. J’ai hâte de la voir mais si je foire tout. Ah ! Bon, arrête d’y penser tout va bien se passer” *il souffle un coup*"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 301); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
+        case 600:
+		 setBackground("main.png"); //On choisit le background du dialogue 1
+            setDialogueText("username","Putain, pourquoi je stress autant. J’ai hâte de la voir mais si je foire tout. Ah ! Bon, arrête d’y penser tout va bien se passer” il souffle un coup, mais il attend 30 minutes devant"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Suivant", 601); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal); //On choisit quel sprite afficher
+            
             break;
+			case 601:
+		 setBackground("main.png"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," arrive Salut désolé pour le retard elle passe devant lui et ils rentrent dans le resto"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Suivant", 602); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal); //On choisit quel sprite afficher
+			  
+			  break;
+			case 602:
+		 setBackground("main.png"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Encore désolé pour le retard mais j'avais des trucs super importants avant de venir"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("D'accord mais tu aurais quand même pu me prévenir ", 603, "Non mais il n'y a pas de problème ", 604, " Silence",604); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal); //On choisit quel sprite afficher
 			
-		case 301:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","*arrive* Salut je suis content de te voir"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 302,"Précédent", 300); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
+			  break;
+			case 603:
+		 setBackground("main.png"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Ouais je sais mais j'avais vraiment pas le temps car j'ai un emploi du temps chargé, sinon tu fais quoi ?"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Ok je comprends, bah je suis encore dans le monde des études et toi ?", 605); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal); //On choisit quel sprite afficher
 			
-		case 302:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","Alors qu'est-ce qu'un beau gosse comme toi fait sur ce genre d'application ?"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 303,"Précédent", 301); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
+			break;
+			case 604:
+		 setBackground("main.png"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Ouais je sais mais j'avais vraiment pas le temps car j'ai un emploi du temps chargé, sinon tu fais quoi ?"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Non mais pas besoin de le prendre comme ça ! elle se lève Vous êtes tous les mêmes ! elle part (the end)", 605); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal); //On choisit quel sprite afficher
 			
-		case 303:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("username","En m'inscrivant, je cherchais plus une relation sérieuse et toi ?"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 304,"Précédent", 302); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
+			break;
+			case 605:
+		 setBackground("main.png"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," Oui bien sûr, tu sais c'est une maladie qui se soigne et même elle peut disparaître de mon corps"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("Ok je comprends, bah je suis encore dans le monde des études et toi ?", 607, "Oui bien sûr, tu sais c'est une maladie qui se soigne et même elle peut disparaître de mon corps ",607, "Je peux t'expliquer quand même en quoi c'est pas dangereux si je fais attention ",607); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal); //On choisit quel sprite afficher
 			
-		case 304:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","Personnellement, je cherche une relation sans prise de tête j’espère que ça ne te dérange pas ?"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 305,"Précédent", 303); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-			
-		case 305:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("username","Non ça ne me dérange pas plus que ça. J'aurais préféré une relation plus sérieuse mais je comprends et c'est bon pour moi"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 306,"Précédent", 304); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-		
-		case 306:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","Oh bah super alors, bon je te le dis toute suite j'ai quelques problèmes et mon médecin m'a dis que je devais tout le temps me protéger lors de rapport donc j'espère tu as de quoi te protéger ?"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 307,"Précédent", 305); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-			
-		case 307:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("username","Oui, ne t'inquiète pas j'ai toujours de quoi me protéger mais pourquoi ton médecin t'a dit ça ?"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 308,"Précédent", 306); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-		
-		case 308:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","J'ai fais des test et j'ai le papillomavirus à ce qu'il paraît"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Mais c'est quoi le papillomavirus ?", 309,"Mais c'est pas trop grave ?", 310,"Précédent", 307); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-		
-		case 309:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","C'est une maladie qui peut me causer des problèmes de santé mais c'est tout ce que je sais"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 311,"Précédent", 308); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-			
-		case 310:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","Non ça va t'inquiète pas "); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 311,"Précédent", 308); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-			
-		case 311:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("username","T'es sûre que c'est pas trop grave?"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 312); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-			
-		case 312:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","Je préfère pas trop en parler parce ça me met un peu mal à l'aise"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 313); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-			
-		case 313:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("username","Je comprends totalement mais sache que si tu veux en parler je suis là "); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Suivant", 314); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
-			
-		case 314:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("paola","Merci, si on fais plus ample connaissance je vais peut-être plus pouvoir t'en parler *elle lui touche la main*"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("Avec plaisir *il lui sourit*", 315,"Je préfère prendre mon temps et faire plus connaissance avant d'aller plus loin",315); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right", paola.normal); //On choisit quel sprite afficher
-            break;
+			 break;
+			case 607:
+		 setBackground("main.png"); //On choisit le background du dialogue 1
+            setDialogueText("Vivih"," ok m'enfou c'est pas ma faute"); //On choisit l'auteur et le texte du dialogue 1
+            setButtons("The end", 602); //On choisit le nom des boutons et le dialogue auquel ils ramènent
+            setCharacter("right", Vivih.normal); //On choisit quel sprite afficher
 			
 			
-		case 315:
-            setBackground("main.png"); //On choisit le background du dialogue 1
-            setDialogueText("","The end"); //On choisit l'auteur et le texte du dialogue 1
-            setButtons("retour au début",300); //On choisit le nom des boutons et le dialogue auquel ils ramènent
-            setCharacter("right",""); //On choisit quel sprite afficher
-            break;
 			
+    
         default:
             console.error(dialogueActuel);
             alert("Erreur / Histoire inexistante");
