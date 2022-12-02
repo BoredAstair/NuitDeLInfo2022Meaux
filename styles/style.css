@@ -244,21 +244,6 @@ footer {
     transition: 0.5s ease;
 }
 
-.game-container #game .bubble #explaination #continue {
-    background-color: white;
-    font-family: 'DM Sans', sans-serif;
-    border: none;
-    cursor: pointer;
-    color: rgb(255, 88, 88);
-    transition: 0.5s ease;
-}
-
-.game-container #game .bubble #explaination #continue:hover {
-    background-color: white;
-    font-weight: bolder;
-    transition: 0.5s ease;
-}
-
 
 /* //////////page infos//////////////// */
 
