@@ -420,3 +420,78 @@ footer {
     display: none;
   }
 }
+
+.info {
+  width: 70vw;
+  margin: 72px auto;
+}
+
+.info h1 {
+  font-size: 4rem;
+}
+
+.info .line {
+  background-color: #fb8864;
+  width: 600px;
+  height: 5px;
+  margin-bottom: 65px;
+}
+
+.info p {
+  font-size: 1.5rem;
+}
+
+.info .shy-text {
+  color: #9e9e9e;
+  text-align: center;
+  margin-top: 32px;
+  font-size: 1.25rem;
+}
+
+.info .text-card {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+  padding: 28px 32px;
+  border-radius: 15px;
+  margin: 48px auto;
+  width: 60vw;
+}
+
+.info .text-card p {
+  font-size: 1.25rem;
+}
+
+.info .text-card h2 {
+  font-size: 1.5rem;
+}
+
+.info .text-card-pink {
+  background-color: #f67c7c;
+}
+.info .text-card-orange {
+  background-color: #fa976d;
+}
+.info .text-card-yellow {
+  background-color: #f2b063;
+}
+
+.info .img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.info .info-img {
+  width: 60vw;
+  margin: 48px auto;
+}
+
+.info .img-container .info-img {
+  margin: 48px auto 0 auto;
+}
+
+.info ul {
+  margin-top: 24px;
+  font-family: 'DM Sans';
+  font-size: 1.5rem;
+}
