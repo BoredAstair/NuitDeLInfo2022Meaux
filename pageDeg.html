@@ -2,74 +2,98 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-  .non {
-    display: none;
-  }
-
-  .jokenon {
-    display: none;
-  }
-
-  .nope2 {
-    display: none;
-  }
-
-  p:hover {
-    font-size: 12rem;
-  }
-
-  @keyframes horrible {
-    from {
-      margin-left: 0;
+    .non {
+        display: none;
     }
-
-    to {
-      margin-left: 100%;
+    
+    .jokenon {
+        display: none;
     }
-  }
-
-  body {
-    font-family: 'Comic Sans MS';
-    background-color: blue;
-    animation-name: horrible;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: cubic-bezier(700, 16, 85, 200);
-  }
-
-  html {
-    background-image: linear-gradient(aqua, green);
-    cursor: url(183-1835546_free-png-download-ghol-fish-png-png-images.png), auto;
-  }
+    
+    .nope2 {
+        display: none;
+    }
+    
+    p:hover {
+        font-size: 12rem;
+    }
+    
+    @keyframes horrible {
+        from {
+            margin-left: 0;
+        }
+        to {
+            margin-left: 100%;
+        }
+    }
+    
+    body {
+        font-family: 'Comic Sans MS';
+        background-color: blue;
+        animation-name: horrible;
+        animation-duration: 8.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(700, 16, 85, 200);
+    }
+    
+    a {
+        color: lightgreen;
+    }
+    
+    a:visited {
+        color: coral;
+    }
+    
+    html {
+        background-image: url(bald-ice.gif);
+        cursor: url(183-1835546_free-png-download-ghol-fish-png-png-images.png), auto;
+    }
 </style>
 
 <body>
-  <h1>Qu'est tu fais là toi ?</h1>
-  <p><a href="">Clique sur moi !!!</a></p>
-  <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Nan sur moi !!!</a></p>
-  <button>Retournez au site</button>
-  <div class="trollButton">
-    <p class="non">Bah nan !</p>
+    <h1>Qu'est tu fais là toi ?</h1>
+    <p><a href="" tabindex="2">Clique sur moi !!!</a></p>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" tabindex="3">Nan sur moi !!!</a></p>
+    <button tabindex="1">Retournez au site</button>
+    <div class="trollButton">
+        <p class="non">Ba
+    </div>h nan !</p>
     <Button class="jokenon">nan je rigole</Button>
-  </div>
+
+    <div class="imageMoche">
+        <img src="cPasBo.png" alt="">
+    </div>
 </body>
+<a href="cat-boom.gif" download hidden id="dl"></a>
 
 </html>
 <script>
-  var non = document.querySelector("button");
-  var bahNon = document.querySelector(".non");
-  var non2 = document.querySelector(".jokenon");
+    var non = document.querySelector("button");
+    var bahNon = document.querySelector(".non");
+    var non2 = document.querySelector(".jokenon");
 
 
-  non.addEventListener("click", () => {
-    bahNon.style.display = "block";
-    non2.style.display = "block";
-  })
+    non.addEventListener("click", () => {
+        bahNon.style.display = "block";
+        non2.style.display = "block";
+    })
+
+
+    document.addEventListener("keydown", () => {
+        document.querySelector('#dl').click();
+    })
+
+    document.addEventListener("click", () => {
+        let gif = document.createElement("img");
+        gif.src = "cat-boom.gif";
+        console.log("AHAHAHAHAHAHAHHAHAHAHAHAHAAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHHA");
+        document.querySelector('html').prepend(gif);
+    })
 </script>
