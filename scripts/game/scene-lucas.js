@@ -37,9 +37,9 @@ export const scenesLucas = [{
     story: [
         'Ne perdant pas le nord, Noémie prend Lucas par le poignet et l’emmène enflammer le dancefloor. ',
         'Leur corps respectifs se rapprochent tels des aimants et un jeu sensuel commence.',
-        'Noémie : “Dis tu veux pas qu’on s’isole”',
+        'Noémie : “Dis, tu veux pas qu’on s’isole”',
         'Lucas : “Rien que nous deux ?"',
-        'Noémie amène Lucas dans une chambre, elle commence à retirer son haut, puis son pantalon et vint doucement caresser son intimité.',
+        'Noémie amène Lucas dans une chambre, elle commence à retirer son haut, puis son pantalon et vient doucement caresser son intimité.',
         'Lucas : “Oh qu’est-ce que tu fais ?”',
         'Noémie : “Tu n’en as pas envie ?”',
     ],
@@ -86,7 +86,7 @@ export const scenesLucas = [{
         explaination: 'Lucas : “Non je n’en ai pas sur moi mais ce n’est pas grave, je me retirerais avant” Noémie : “Okay je te fais confiance”',
     },
     {
-        text: 'Lucas va demander à un de ses amis de la soirée s’il en a pas un à lui donner.',
+        text: 'Lucas va demander à un de ses amis de la soirée s’il n’en a pas un à lui donner.',
         target: 'ask',
         explaination: 'Lucas : “Je n’en ai pas sur moi mais je vais aller demander à un ami. Ne bouge pas, je reviens vite”',
     },
@@ -162,9 +162,9 @@ export const scenesLucas = [{
         explaination: 'Lucas : "Le préservatif me serre trop et puis c’est mieux sans" Noémie : "Oui tu as raison"',
     },
     {
-        text: 'Retirer le préservatif et de ne pas continuer',
+        text: 'Retirer le préservatif et ne pas continuer',
         target: 'stop',
-        explaination: 'Lucas : “Le préservatif me serre trop, je préfère qu’on remette ça à plus tard ” Noémie : "Oui pas de problème, on aura d\'autres occasions de se revoir',
+        explaination: 'Lucas : “Le préservatif me serre trop, je préfère qu’on remette ça à plus tard ” Noémie : "Oui pas de problème, on aura d’autres occasions de se revoir',
     },
     ],
 },
