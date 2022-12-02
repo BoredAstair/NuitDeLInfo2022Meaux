@@ -2,14 +2,15 @@ const events = new EventSource('//meauxlotov.alwaysdata.net/events');
 
 const discordMessages = document.querySelector('#discord-messages');
 
+console.log(discordMessages)
+
 events.onmessage = (event) => {
   const { userName, userMessage } = JSON.parse(event.data);
 
-  const li = document.createDocumentFragment();
-  li.innerHTML = `<li>
-    Message de : <strong>${userName}</strong>
-    <q>${userMessage}</q>
-  </li>`;
+  console.log(userName)
 
-  discordMessages.appendChild(li);
+  discordMessages.innerHTML+= `<li>
+  Message de : <strong>${userName}</strong>
+  <q>${userMessage}</q>
+</li>`;
 };
