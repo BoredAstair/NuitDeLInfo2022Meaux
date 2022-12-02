@@ -1,0 +1,30 @@
+body{
+    margin:0px;
+    padding:0px;
+  }
+  
+  #container{
+    background-color:#FFCCAA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+  }
+       
+  #box{
+    margin:auto;
+    width:160px;
+    height:90px;
+    background-color:lightblue;    
+    position:absolute; 
+  }
+       
+  #image1{
+    position:absolute;
+    left:10%;
+    top:2%;
+    width:50%;
+    height:auto;
+  }

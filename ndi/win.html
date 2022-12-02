@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>YouWin </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/style3.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+        
+    </head>
+    <body>
+
+        <div class="background"><img src="ressources/room.png"></img></div>
+        <div class="popup">
+            <h1>You win ! </h1>
+            <p>Bravo  tu as gagné, tu peux passer à l'étape suivante mais nous espérons que tu as compris les dangers autour de ta vie sexuelle et comment les contrer.</p>
+            <button class="custom-btn btn-2" onclick="redirection()">Continuer</button>
+        </div>
+        <script>
+            function redirection(){
+                document.location.href="jeu1.html?objetgris="
+            }
+        </script>
+
+        
+   </body>     
+</html>

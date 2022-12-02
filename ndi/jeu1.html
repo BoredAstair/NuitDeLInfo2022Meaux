@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/jeu1.css"/>
+    <link rel="icon" type="image/x-icon" href="/ressources/Sida_Logo.ico">
+    <title>No Cap - Votre santé intéractive !</title>
+  </head>
+
+  <body>
+    <div class="chambre" id="box">
+      <a href="./jeu2.html" id="button"><button>Hôpital</button></a>
+
+      <img class="items" id="robe" onclick="apparition_robe()" src="/ressources/robe.svg">
+      <img class="items" id="test" onclick="apparition_test()" src="/ressources/test.svg">
+      <img class="items" id="pillule" onclick="apparition_pillule()" src="/ressources/pillule.svg">
+      <img class="items" id="condom" onclick="apparition_condom()" src="/ressources/capote.svg">
+
+      <div class="question_items display" id="robe_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+        <h1 class="questions">La robe</h1>
+        <p>Un homme met une main aux fesses d'une femme sans son consentement ? De quoi il s'agit ?</p>
+        <div class="reponses">
+
+          <div id="checkvrai">
+            <input class=" N1" type="checkbox" id="vrai" name="scales" onclick="reponse_V(this, event)">
+            <label class=" N2" for="scales">Agression</label>
+          </div>
+      <div>
+        <input class=" N1" type="checkbox" id="faux" name="scales" onclick="reponse_F(event)">
+        <label class=" N2" for="scales">Harcèlement</label>
+        
+      </div>
+      </div>
+
+      
+
+      </div>
+
+      <div class="question_items display" id="pillule_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+
+        <h1 class="questions">La pilule</h1>
+        <p>Quels sont les effets secondaires de la pilule ?</p>
+        <div class="reponses">
+
+          <div id="checkvrai">
+            <input class=" N1" type="checkbox" id="vrai_2" name="scales" onclick="reponse_V(this, event)">
+            <label class=" N2" for="scales">Sauts d'humeur</label>
+          </div>
+      <div>
+        <input class=" N1" type="checkbox" id="faux_2" name="scales" onclick="reponse_F(event)">
+        <label class=" N2" for="scales">Rougeur</label>
+        
+      </div>
+      </div>
+
+      
+
+      </div>
+
+      <div class="question_items display" id="test_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+
+        <h1 class="questions">Le test de grossesse</h1>
+        <p>Mélanie a fait un test de grossesse qui s'avère être positif, elle pense que la fécondation s'est produite le 1er Octobre 2022</p>
+        <div class="reponses">
+
+          <div id="checkvrai">
+            <input class=" N1" type="checkbox" id="vrai_3" name="scales" onclick="reponse_V(this, event)">
+            <label class=" N2" for="scales">Elle peut avorter en janvier 2023</label>
+          </div>
+      <div>
+        <input class=" N1" type="checkbox" id="faux_3" name="scales" onclick="reponse_F(event)">
+        <label class=" N2" for="scales">Elle peut avorter en mai 2023</label>
+        
+      </div>
+      </div>
+
+      
+
+      </div>
+
+      <div class="question_items display" id="condom_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+        <h1 class="questions">Le préservatif</h1>
+        <p>Il n'y a qu'un seul type de préservatif ?</p>
+        <div class="reponses">
+
+          <div id="checkvrai">
+            <input class=" N1" type="checkbox" id="vrai_4" name="scales" onclick="reponse_V(this, event)">
+            <label class=" N2" for="scales">Vrai</label>
+          </div>
+      <div>
+        <input class=" N1" type="checkbox" id="faux_4" name="scales" onclick="reponse_F(event)">
+        <label class=" N2" for="scales">Faux</label>
+        
+      </div>
+      </div>
+
+      
+
+      </div>
+
+      
+      
+
+    </div>
+    <script src="/js/responsive.js"></script>
+    <script src="/js/items.js"></script>
+    <script src="/js/checked.js"></script>
+
+
+
+
+  
+
+  </body>
+
+</html>

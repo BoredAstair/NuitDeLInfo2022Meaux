@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/jeu2.css"/>
+    <link rel="icon" type="image/x-icon" href="/ressources/Sida_Logo.ico">
+    <title>No Cap - Votre santé intéractive !</title>
+  </head>
+
+  <body>
+    <div class="chambre" id="box">
+      <a href="./jeu1.html" id="button"><button>Chambre</button></a>
+      <img class="items" id="serringue" onclick="apparition_serringue()" src="/ressources/Serringue.svg">
+      <img class="items" id="docteur" onclick="apparition_docteur()" src="/ressources/docteur.png">
+      <img class="items" id="livre" onclick="apparition_livre()" src="/ressources/livre.svg">
+      <img class="items" id="papier" onclick="apparition_papier()" src="/ressources/papier.svg">
+
+      <div class="question_items display" id="serringue_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+        <h1 class="questions">La serringue</h1>
+        <p>Est-ce qu'une maladie sexuellement transmissible se transmet uniquement lors d'un rapport sexuel ?</p>
+        <div class="reponses">
+
+          <div id="checkvrai">
+            <input class=" N1" type="checkbox" id="vrai_5" name="scales" onclick="reponse_V(this, event)">
+            <label class=" N2" for="scales">Oui</label>
+          </div>
+      <div>
+        <input class=" N1" type="checkbox" id="faux_5" name="scales" onclick="reponse_F(event)">
+        <label class=" N2" for="scales">Non</label>
+        
+      </div>
+      </div>
+
+      
+
+      </div>
+
+      <div class="question_items display" id="livre_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+        <video controls width="250">
+
+      
+          <source src="/ressources/Le virus du sida _ il faut savoir comment il se transmet.mp4"
+                  type="video/mp4">
+    
+      </video>
+
+      </div>
+
+      
+
+      </div>
+
+      <div class="question_items display" id="docteur_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+
+        <h1 class="questions">Le docteur</h1>
+        <p>Vous avez contracté la gonococcie, voici les traitements qui s'offrent à vous</p>
+        <div class="reponses">
+
+          <div id="checkvrai">
+            <input class=" N1" type="checkbox" id="vrai_6" name="scales" onclick="reponse_V(this, event)">
+            <label class=" N2" for="scales">Prise d'antibiotiques</label>
+          </div>
+      <div>
+        <input class=" N1" type="checkbox" id="faux_6" name="scales" onclick="reponse_F(event)">
+        <label class=" N2" for="scales">Injection intra-musculaire</label>
+        
+      </div>
+      </div>
+
+      
+
+      </div>
+
+      <div class="question_items display" id="papier_questions">
+        <button onclick="fermeinfo(event)"class="close">X</button>
+        <h1 class="questions">Analyse de la prise de sang</h1>
+        <p>Bravo, vous avez réussi à prendre soin de votre maladie, n'oubliez pas de vous dépister le plus souvent possible de façon anonyme en laboratoire ou avec l'ordonnance d'un médecin.</p>
+      </div>
+
+      
+      
+
+    </div>
+    <script src="/js/responsive.js"></script>
+    <script src="/js/items.js"></script>
+    <script src="/js/checked.js"></script>
+
+
+
+
+  
+
+  </body>
+
+</html>

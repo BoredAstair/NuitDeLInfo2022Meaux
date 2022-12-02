@@ -1,0 +1,137 @@
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.chambre{
+
+    position:absolute; 
+    margin:auto;
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../ressources/DOC.png");
+    background-size: 100% 100%;
+
+
+
+}
+.items{
+    position: absolute;
+    height:auto;
+    animation: items-animation 0.7s ease-in-out 0s infinite alternate none ;
+
+}
+.chambre > #serringue{
+    width: 5%;
+    top :83%;
+    left:43%;
+}
+.chambre > #docteur{
+    width: 12%;
+    top :36%;
+    left:52.6%;
+}
+.chambre > #livre{
+    width:10%;
+    top :31%;
+    left:36%;
+}
+.chambre > #papier{
+    width: 3%;
+    top :64%;
+    left:53%;
+}
+.chambre > #pillule{
+    width: 3%;
+    bottom :5%;
+    left:25%;
+}
+.items:hover{
+    cursor:pointer;
+    border: 5px solid white;
+    animation-name: none;
+}
+
+
+@keyframes items-animation{
+    from{
+        border: 5px solid white;
+
+    }
+    to{
+        border: 5px solid transparent;
+    }
+}
+
+.question_items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    background-color: #C05454;
+    color: white;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+
+.reponses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+
+}
+.N1, .N2, .N3{
+
+    border-radius: 20px;
+
+}
+
+
+.display{
+    display: none;
+}
+
+label{
+    align-self: center;
+}
+
+.fondrouge{
+    background-color: red;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close{
+
+    width: fit-content;
+    padding: 2%;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+video{
+    width: 70%;
+    margin: auto;
+}
+
+#livre_questions{
+    width: 50%;
+}
+
+#button{
+        align-self: start;
+        padding: 10px;
+}

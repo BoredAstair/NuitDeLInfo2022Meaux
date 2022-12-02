@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/test.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <img class="items" id="porte" src="/ressources/door-rg1024-Door-with-cristal-and-wall.svg">
+        </div>
+
+
+    <script>
+        function resize(){
+        var box = document.querySelector("#box");
+  var boxRatio = 16/9;
+  var windowRatio = window.innerWidth/window.innerHeight;
+  if(boxRatio > windowRatio){
+    // Blue box width should be equal to window.innerWidth
+    var width = window.innerWidth;
+    box.style.width = (width) + "px";
+    box.style.height = (width/boxRatio) + "px"
+  } else {
+    // Blue box height should be equal to window.innerHeight
+    var height = window.innerHeight;
+    box.style.height = (height) + "px";
+    box.style.width = (height*boxRatio) + "px"
+  }
+}
+
+    </script>
+</body>
+</html>
