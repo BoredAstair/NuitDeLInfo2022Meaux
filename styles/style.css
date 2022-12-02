@@ -247,22 +247,23 @@ footer {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 3rem;
+
 }
 
 .grid {
+  width: 100%;
   display: grid;
   grid-gap: 6rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  align-items: start;
+  align-items: center;
+    justify-items: center;
+    padding-top: 5%;
 }
 @media (max-width: 40em) {
   .grid {
     grid-gap: 3rem;
   }
-  .car_container {
-    padding: 3rem;
-  }
+
 }
 .grid__item {
   background-color: #fff;
@@ -270,7 +271,7 @@ footer {
   overflow: hidden;
   border: solid 2px black;
   cursor: pointer;
-  width: 500px;
+  width: 450px;
   transition: 0.2s;
 }
 .grid__item:hover {
