@@ -89,7 +89,7 @@
 
 #image1{
     background-image: url(../ressources/characters/boy.png);
-    background-position: 0px 0px;
+    background-position: -10px 0px;
 }
 #image2{
     background-image: url(../ressources/characters/girl.png);
