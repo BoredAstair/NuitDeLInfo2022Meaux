@@ -208,10 +208,10 @@ export const scenesLucas = [{
     question: ' ',
 
     choice: [{
-        text: ' ',
-        target: ' ',
-        explaination: ' ',
-    },],
+        text: 'Retour au menu jeu',
+        target: 'JEU',
+        explaination: '',
+    }],
 },
 // ============================================================================
 {
@@ -232,9 +232,9 @@ export const scenesLucas = [{
     question: ' ',
 
     choice: [{
-        text: ' ',
-        target: ' ',
-        explaination: ' ',
-    },],
+        text: 'Retour au menu jeu',
+        target: 'JEU',
+        explaination: '',
+    }],
 },
 ];

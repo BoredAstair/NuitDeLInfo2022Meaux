@@ -28,7 +28,7 @@ export const scenesAurelie = [{
 },
 // ============================================================================
 {
-  id: 'party',
+  id: 'discuss',
 
   story: [
     'Pauline : Ecoute j’ai eu un rapport sexuel avec Mathieu hier soir mais la capote a craqué…',
@@ -39,7 +39,7 @@ export const scenesAurelie = [{
   question: 'Que répond Aurélie ?',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
@@ -71,7 +71,7 @@ export const scenesAurelie = [{
   question: 'Que répond Aurélie ?',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
@@ -101,13 +101,13 @@ export const scenesAurelie = [{
   question: '',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
   choice: [{
-    text: '',
-    target: '',
+    text: 'Retour au menu jeu',
+    target: 'JEU',
     explaination: '',
   }],
 },
@@ -128,7 +128,7 @@ export const scenesAurelie = [{
   question: 'Que répond Aurélie ?',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
@@ -157,13 +157,13 @@ export const scenesAurelie = [{
   question: '',
 
   perso1: '../img/aurelie_story_aurelie.png',
-  perso2: '../img/lana_story.png',
+  perso2: '../img/pauline_story.png',
 
   background: 'salon',
 
   choice: [{
-    text: '',
-    target: '',
+    text: 'Retour au menu jeu',
+    target: 'JEU',
     explaination: '',
   }],
 },
