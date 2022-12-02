@@ -14,7 +14,6 @@ function renderScreen(screen) {
   <section class="bubble">
 
     <div class="question">
-      Écran : #${screen.id}
       <p>${screen.story}</p>
       <h4>${screen.question}</h4>
     </div>
