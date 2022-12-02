@@ -21,11 +21,9 @@ function renderScreen(screen) {
     ${screen.choice
       .map(
         (choice) =>
-          `<button class="button-story" data-explaination="${choice.explaination}" data-target="${choice.target}">${choice.text}</button>`
+          `<button class="button-story" data-target="${choice.target}">${choice.text}</button>`
       )
       .join('')}
-
-    <div id="explaination"></div>
     
   <section>`;
 
@@ -36,21 +34,6 @@ function renderScreen(screen) {
 delegateEventListener('click', '.button-story', (event) => {
   const element = event.target;
 
-  // Récupère les informations "data-target" et "data-explaination" de l'élément cliqué
-  const target = element.dataset.target;
-  const explaination = element.dataset.explaination;
-
-  // Affiche l'explication
-  showExplaination(explaination, target);
-
-  // Désactive les réponses
-  document.querySelectorAll('.button-story').forEach((button) => (button.disabled = true));
-});
-
-// Quand on clique sur le bouton continuer …
-delegateEventListener('click', '#continue', (event) => {
-  const element = event.target;
-
   // Récupère les informations "data-target" de l'élément cliqué
   const target = element.dataset.target;
 
@@ -59,16 +42,6 @@ delegateEventListener('click', '#continue', (event) => {
   // Re-affiche l'écran correspondant à la scène cliquée
   renderScreen(scenes[idScene]);
 });
-
-// Pour afficher une explication après avoir choisi une réponse
-function showExplaination(explaination, target) {
-  const explainationElement = document.querySelector('#explaination');
-
-  explainationElement.innerHTML = `
-        <p>${explaination}</p>
-        <button id="continue" data-target="${target}">Continuer</button>
-    `;
-}
 
 let scenes = null;
 
