@@ -253,7 +253,7 @@ footer {
 .grid {
   width: 100%;
   display: grid;
-  grid-gap: 6rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: center;
     justify-items: center;
@@ -271,7 +271,7 @@ footer {
   overflow: hidden;
   border: solid 2px black;
   cursor: pointer;
-  width: 450px;
+  width: 30rem;
   transition: 0.2s;
 }
 .grid__item:hover {
